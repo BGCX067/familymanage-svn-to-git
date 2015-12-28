@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <SkinRelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/top" >
+
+        <SkinImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/logo" />
+
+        <SkinTextView
+            android:id="@+id/tv_linkman"
+            style="@style/StyleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_icon"
+            android:textColor="@color/title" />
+
+        <!--<SkinButton
+            android:id="@+id/recentContact"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/seeall_xml" />
+    --></SkinRelativeLayout>
+
+    <SkinRelativeLayout
+        android:id="@+id/rl_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/top_base" >
+
+        <SkinEditText
+            android:id="@+id/et_edit"
+            style="@style/et_input_box_style"
+            android:layout_width="180dip"
+            android:layout_height="37dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:textColor="@color/talk_inputbody_color"
+            android:textSize="16sp" />
+
+        <SkinButton
+            android:id="@+id/bt_search"
+            android:layout_width="40dip"
+            android:layout_height="37dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/et_edit"
+            android:background="@drawable/bt_xml"
+            android:text="@string/search" />
+
+        <SkinButton
+            android:id="@+id/bt_clear"
+            android:layout_width="40dip"
+            android:layout_height="37dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@id/et_edit"
+            android:background="@drawable/bt_xml"
+            android:text="@string/delete" />
+    </SkinRelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="true"
+        android:listSelector="#00000000"
+        android:scrollbarThumbVertical="@drawable/scroll" />
+
+    <SkinRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/base" >
+
+        <SkinButton
+            android:id="@+id/contactbtn_ok"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_sms_xml"
+            android:text="@string/confirm"
+            android:textColor="@color/defcolor" />
+
+        <SkinButton
+            android:id="@+id/contactbtn_cel"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_sms_xml"
+            android:text="@string/calcel"
+            android:textColor="@color/defcolor" />
+    </SkinRelativeLayout>
+
+</SkinLinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ContextAwareActivity!</string>
+    <string name="app_name">智能手机管家</string>
+    <string name="scan_bt">扫描蓝牙</string>
+    <string name="scan_wlan">扫描WLAN</string>
+    <string name="start">启动</string>
+    <string name="stop">停止</string>
+    <string name="signal_strength">信号强度</string>
+    <string name="store">保存配置</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="ok">确定</string>
+    <string name="scanning">正在扫描...</string>
+    <string name="has_started">服务已启动</string>
+    <string name="has_stopped">服务已停止</string>
+    <string name="minute">分钟</string>
+    <string name="scan_interval">扫描间隔设置</string>
+    <string name="wlan">WLAN</string>
+    <string name="turn_on_wlan">请确认是否开启WLAN?</string>
+    <string name="turn_off_wlan">请确认是否关闭WLAN?</string>
+    <string name="contact_none">通讯录空</string>
+    <string name="remote_control">短信遥控</string>
+    <string name="forward_incoming_call">转移来电</string>
+    <string name="enable_forward_call">启动格式: 转移到xxxxxx:电话号码</string>
+    <string name="disable_forward_call">取消格式: 转移到xxxxxx</string>
+    <string name="first_key_forward_call">转移到</string>      
+    <string name="set_forward_call">设置转移</string>
+    <string name="reset">清除设置</string>    
+    <string name="forward_SMS">转发短信</string>
+    <string name="enable_forward_SMS">启动格式: 转发到xxxxxx:手机号码</string>
+    <string name="disable_forward_SMS">取消格式: 转发到xxxxxx</string>
+    <string name="first_key_forward_SMS">转发到</string>    
+    <string name="set_forward_SMS">设置转发</string> 
+    <string name="lock_unlock">锁机/解锁</string>
+    <string name="lock_format">锁机格式: LOCK</string>
+    <string name="unlock_format">解锁格式: UNLOCK</string>
+    <string name="SIMCardNotification">SIM卡更换通知短信</string>
+    <string name="Set_Notification_Number">设定手机号码</string>    
+    <string name="set_number_title">输入手机号码</string>       
+    <string name="Set_receiver_Number_message">请设定SIM卡更换时的通知短信接收者手机号码:</string>
+    <string name="set_forward_call_title">设置电话转移关键词</string>        
+    <string name="set_forward_call_key_words">请设置实现呼叫转移的短信关键词(转移到xxxxxx)</string>
+    <string name="set_forward_sms_title">设置短信转发关键词</string>    
+    <string name="set_forward_sms_key_words">请设置实现短信转发的短信关键词(转发到xxxxxx)</string>    
+    <string name="reset_forward_call_ok">实现呼叫转移的短信关键词已被清空</string>    
+    <string name="reset_forward_sms_ok">实现短信自动转发的短信关键词已被清空</string>
+    <string name="reset_notification_number_ok">通知短信接收者号码已被清空</string>  
+        
+    <string name="sim_card_changed_notification">警告!!! 您丢失或者被盗的手机上的SIM卡已经被换为该号码.</string>    
+    <string name="succeed_to_set_nofication_receiver">已成功设置接收通知短信的电话号码!</string>
+    <string name="succeed_to_set_forward_call">已成功设置转移来电的短信关键词!</string>
+    <string name="succeed_to_set_forward_sms">已成功设置转发短信的关键词!</string>
+    
+    <array name="profile">
+        <item>标准</item>
+        <item>静音</item>
+        <item>震动</item>
+    </array>
+    
+    <array name="forward">
+        <item>返回忙音提示</item>
+        <item>返回空号提示</item>
+        <item>返回关机提示</item>
+        <item>返回停机提示</item>
+    </array>
+    
+    <array name="strength">
+        <item>强</item>
+        <item>弱</item>
+    </array>
+    
+    <array name="select_number">
+        <item>手动输入</item>
+        <item>从通讯录选择</item>
+    </array>
+    
+    <string name="select_profile">情景模式选择</string>
+	<string name="device_name">设备名称</string>
+	<string name="device_address">设备地址</string>
+	<string name="sensitivity">临界点</string>
+	<string name="set_profile">点击选择情景模式</string>
+	<string name="success">设置成功!</string>
+	<string name="error">设置失败!</string>
+	<string name="existing_bt">已选定的蓝牙设备</string>
+	<string name="nearby_bt">附近的蓝牙设备</string>
+	<string name="existing_wlan">已选定的WLAN</string>
+	<string name="nearby_wlan">附近的WLAN</string>
+	<string name="config_enable">该配置项已被选择</string>
+	<string name="config_disable">该配置项未被选择</string>
+	<string name="delete_config">删除配置</string>
+	<string name="clear_bt">清空蓝牙</string>
+	<string name="clear_wlan">清空WLAN</string>
+	<string name="scan_wlan_failed">扫描WLAN失败</string>
+	<string name="fail_to_scan_BT">由于蓝牙没有开启,无法扫描附近的蓝牙设备</string>
+  <string name="fail_to_scan_WLAN">由于WLAN没有开启,无法扫描附近的WLAN</string>	
+  <string name="turn_off_bt">请确认是否关闭蓝牙?</string>	
+  <string name="diable_bt">关闭蓝牙</string>	  	
+	
+	<string name="select_forward">呼叫转移选择</string>
+	<string name="select_block_number">选择将被拒接的号码</string>
+	
+</resources>

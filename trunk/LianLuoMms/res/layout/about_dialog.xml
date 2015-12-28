@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/about_bg"
+    android:orientation="vertical"
+    android:paddingLeft="40dip"
+    android:paddingTop="40dip" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/about"
+        android:textColor="@android:color/white" 
+        android:textSize="20sp"
+        android:textStyle="bold" 
+        />
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" 
+        
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/re_de_text" 
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/version_about"
+        android:textColor="@color/re_de_text" 
+        android:textSize="14sp" />
+ 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/companyname_about"
+        android:textColor="@color/re_de_text" 
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:autoLink="all"
+        android:text="@string/site_about"
+        android:textColor="@color/re_de_text" 
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:autoLink="all"
+        android:text="@string/email_about"
+       	android:textColor="@color/re_de_text" 
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:autoLink="all"
+        android:text="@string/kefu_about"
+        android:textColor="@color/re_de_text" 
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:autoLink="all"
+        android:text="@string/fax_about"
+        android:textColor="@color/re_de_text" 
+        android:textSize="14sp" />
+	</LinearLayout>
+</RelativeLayout>

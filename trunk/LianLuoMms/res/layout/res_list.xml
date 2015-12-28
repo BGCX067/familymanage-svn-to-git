@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/res_title" />
+
+    
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_bj"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_hot_res"
+                    style="@style/ResStyleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/res_hot"
+                    android:textSize="15sp"
+                    android:textColor="@color/res_def" />
+                <TextView
+                    android:id="@+id/res_hot_img"
+                    android:layout_width="80dip"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_free_res"
+                    style="@style/ResStyleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/res_free"
+                    android:textSize="15sp"
+                    android:textColor="@color/res_choice" />
+
+                <TextView
+                    android:id="@+id/res_free_img"
+                    android:layout_width="80dip"
+                    android:layout_height="5dip"
+                 />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_new_res"
+                    style="@style/ResStyleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/res_new"
+                    android:textSize="15sp"
+                    android:textColor="@color/res_def" />
+
+                <TextView
+                    android:id="@+id/res_new_img"
+                   android:layout_width="80dip"
+                    android:layout_height="5dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_my_res"
+                    style="@style/ResStyleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:text="@string/shop_tab1"
+                    android:textColor="@color/res_def" />
+
+                <TextView
+                    android:id="@+id/res_my_img"
+                    android:layout_width="80dip"
+                    android:layout_height="5dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/res_hot_img"
+                    android:layout_width="80dip"
+                    android:layout_height="5dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/res_free_img"
+                    android:layout_width="80dip"
+                    android:layout_height="5dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_on" />
+
+                <TextView
+                    android:id="@+id/res_new_img"
+                    android:layout_width="80dip"
+                    android:layout_height="5dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/res_my_img"
+                    android:layout_width="80dip"
+                    android:layout_height="5dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </RelativeLayout>
+        -->
+	
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:flipInterval="1000"
+        android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out"
+        android:persistentDrawingCache="animation" >
+
+        <include
+            android:id="@+id/free_g"
+            layout="@layout/res_viewflipper_layout" />
+
+        <include
+            android:id="@+id/hot_g"
+            layout="@layout/res_viewflipper_layout" />
+
+        <include
+            android:id="@+id/new_g"
+            layout="@layout/res_viewflipper_layout" />
+
+        <include
+            android:id="@+id/my_g"
+            layout="@layout/res_my" />
+    </ViewFlipper>
+    
+    <LinearLayout 
+        android:id="@+id/month_rate_layout"
+        android:layout_width="fill_parent"
+		android:layout_height="64dip"
+		android:orientation="horizontal"
+		android:background="@drawable/order_bg"
+		android:layout_alignParentBottom="true"
+	    android:gravity="center_horizontal"
+	    android:visibility="gone" 
+	     >
+    <!-- 包月计费广告横幅 -->
+	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/month_rate_toastinfo"
+		android:textColor="#6F6F70"
+		android:textSize="15sp"
+		android:layout_marginLeft="5dip"
+		android:layout_gravity="left|center_horizontal"
+		android:layout_weight="1"
+	    />
+	<Button 
+	    android:id="@+id/month_rate"
+        android:layout_width="105dp"
+        android:layout_height="31dp"
+		android:text="@string/order"
+		android:textColor="#000000"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="1dip"
+		android:background="@drawable/order"
+		android:layout_gravity="right|center_horizontal"
+		android:layout_weight="1"
+	    />
+    </LinearLayout>
+	</RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <resources>
+
+	<style name="et_input_box_style" parent="@android:style/Widget.EditText">
+		<item name="android:background">@drawable/et_input_box_xml</item>
+		<item name="android:textColor">@color/talk_inputbody_color</item>
+		<item name="android:textColorHint">@color/talk_inputbody_color</item>
+	</style>
+
+</resources>
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="310dip" android:layout_height="wrap_content" android:background="@drawable/dialog_bg">
+   
+	<SkinRelativeLayout android:id="@+id/rl_top" 
+		android:layout_width="310dip" android:layout_height="wrap_content"
+		android:background="@drawable/dialog_top">
+
+		<ImageView android:id="@+id/iv_logo" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+			 android:layout_marginLeft="10dip" android:layout_centerVertical="true"
+			android:background="@drawable/logo" />
+
+		<SkinTextView android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_centerVertical="true"
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="10dip" android:layout_toRightOf="@id/iv_logo" style="@style/StyleText"
+			android:ellipsize="marquee" android:singleLine="true" android:text="@string/app_name"  android:textColor="@color/dg_title"
+			/>
+		<SkinButton android:id="@+id/bt_close" android:layout_width="wrap_content" android:layout_centerVertical="true"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+			android:layout_marginRight="10dip" 
+			android:background="@drawable/dialog_close_xml" />
+	</SkinRelativeLayout>
+	<SkinRelativeLayout android:id="@+id/rl_title" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@id/rl_top" android:layout_marginTop="3dip">
+
+		<SkinImageView android:id="@+id/iv_head" android:layout_width="34dip"
+			android:layout_height="34dip" android:layout_alignParentLeft="true"
+			android:layout_marginLeft="10dip" 
+			android:background="@drawable/def_head"
+			android:visibility="gone" />
+
+		<SkinTextView android:id="@+id/address" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			 android:layout_toRightOf="@id/iv_head" android:textStyle="bold"
+			android:textColor="@color/dg_name_color"  />
+
+		<SkinTextView android:id="@+id/tv_percent" android:layout_width="wrap_content" android:layout_toRightOf="@id/iv_head"
+			android:layout_height="wrap_content" android:layout_below="@id/address"
+			android:layout_marginLeft="5dip" android:textSize="12sp"
+			android:textColor="@color/dg_name_color"  android:text="1/10"/>
+
+		<SkinTextView android:id="@+id/tv_date" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+			 android:layout_marginRight="8dip" 
+			android:textColor="@color/dg_time_color" android:layout_below="@id/address"/>
+	</SkinRelativeLayout>
+
+	<SkinTextView android:id="@+id/tv_body" android:layout_width="300dip" android:padding="3dip"
+		android:layout_height="90dip" android:layout_below="@id/rl_title" android:layout_marginLeft="10dip"
+		android:background="@drawable/dialog_text" android:minLines="3"  android:layout_marginRight="5dip" 
+		android:textColor="@color/dg_body_color" android:layout_centerHorizontal="true"/>
+
+	<SkinRelativeLayout android:id="@+id/bottom" 
+		android:layout_width="wrap_content" android:layout_height="50dip"
+		android:layout_below="@id/tv_body" >
+		<SkinButton android:id="@+id/backSmsButton" android:layout_width="48dip"
+			android:layout_height="32dip" android:layout_alignParentRight="true"
+			android:layout_marginRight="5dip" android:layout_marginTop="5dip" 
+			 android:background="@drawable/bt_xml" 
+			android:text="@string/reply" android:textColor="@color/dg_call_color" />
+		<SkinButton android:id="@+id/bt_call" android:layout_width="48dip"
+			android:layout_height="32dip" android:layout_alignParentLeft="true" 
+			 android:layout_marginLeft="10dip" android:layout_marginTop="5dip" 
+			 android:background="@drawable/bt_xml" 
+			android:text="@string/call" android:textColor="@color/dg_call_color" />
+		<SkinEditText android:id="@+id/et_editsms" android:layout_width="178dip" style="@style/dialog_input_box_style"
+			android:layout_height="wrap_content" android:layout_marginRight="3dip" android:layout_marginLeft="3dip"
+			android:singleLine="true" android:layout_toLeftOf="@id/backSmsButton" android:layout_toRightOf="@id/bt_call"
+			 android:maxLength="900" android:layout_marginTop="7dip" android:textColor="@color/talk_inputbody_color"
+			 android:hint="@string/input_body" android:paddingLeft="2dip" android:paddingRight="2dip" />
+	</SkinRelativeLayout>
+
+</SkinRelativeLayout>

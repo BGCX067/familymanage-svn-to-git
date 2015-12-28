@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shop_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+	<SkinRelativeLayout android:layout_width="fill_parent" android:layout_alignParentTop="true"
+		android:layout_height="46dip" android:id="@+id/rl_title" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:background="@drawable/top">
+		<SkinImageView android:layout_width="32dip" android:layout_marginRight="5dip"
+				android:layout_height="32dip" android:id="@+id/iv_icon" 
+				android:background="@drawable/logo" android:layout_alignParentLeft="true"
+				android:layout_marginLeft="10dip" android:layout_centerVertical="true" />
+		<SkinTextView android:layout_width="wrap_content" android:textColor="@color/title"
+				android:layout_height="wrap_content" android:id="@+id/tv_appname" style="@style/StyleText"
+				android:text="@string/app_name" android:layout_toRightOf="@id/iv_icon" 
+				android:layout_centerVertical="true" />
+	    <SkinButton android:layout_width="32dip"
+				android:layout_height="32dip" android:id="@+id/bt_shortcut"
+				android:layout_alignParentRight="true" android:layout_marginRight="10dip"
+				android:layout_centerVertical="true" android:background="@drawable/bt_shortcut_key_xml" />
+		<SkinTextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/tv_count" android:textColor="@color/title"
+				android:layout_alignParentRight="true" android:layout_marginRight="10dip"
+				android:layout_centerVertical="true" 
+				android:visibility="gone"/>	
+	</SkinRelativeLayout>
+    <SkinFrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/framelayout_shop"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="35dip" >
+        </FrameLayout>
+		
+		<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="15dp">
+        <SkinButton
+            android:id="@+id/button_downloada"
+            android:layout_width="96dip"
+            android:layout_height="32dip"
+            android:background="@drawable/download_up"
+            android:text="@string/shop_download_button" />
+		</LinearLayout>
+        <SkinLinearLayout
+            android:id="@+id/linearlayout_download"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+            <com.lianluo.core.net.download.DLListView
+                android:id="@+id/listview_download"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                progressBack="@drawable/progress_back"
+                progressStyle="@drawable/progress_style"
+                textItemColor="#ff0000" >
+            </com.lianluo.core.net.download.DLListView>
+			
+            <SkinButton
+                android:id="@+id/button_downloadb"
+                android:layout_width="96dip"
+                android:layout_height="32dip"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:background="@drawable/download_down"
+                android:text="@string/shop_download_button" />
+        </SkinLinearLayout>
+    </SkinFrameLayout>
+
+    <SkinLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base"
+        android:orientation="horizontal" 
+        android:gravity="center_vertical"
+        android:paddingTop="2dp"
+        >
+
+        <SkinTextView
+            android:id="@+id/bt_tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/shop_tab1"
+            android:textColor="@color/res_menu_color"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shop_tab_fg" />
+
+        <SkinTextView
+            android:id="@+id/bt_tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/shop_tab2"
+            android:textColor="@color/res_menu_color"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shop_tab_fg" />
+
+        <SkinTextView
+            android:id="@+id/bt_tab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/shop_tab3"
+            android:textColor="@color/res_menu_color"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shop_tab_fg" />
+
+        <SkinTextView
+            android:id="@+id/bt_tab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/shop_tab4"
+            android:textColor="@color/res_menu_color"
+            android:textSize="12sp" />
+    </SkinLinearLayout>
+
+</SkinLinearLayout>

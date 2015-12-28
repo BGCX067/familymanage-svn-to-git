@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skingird"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/myskin"
+        android:layout_width="115dip"
+        android:layout_height="115dip"
+        android:layout_weight="1"
+        android:background="@drawable/shop_skin_click"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/myskin_iv"
+            android:layout_width="105dip"
+            android:layout_height="105dip"
+            android:layout_gravity="center"
+            android:background="@drawable/shop_skin" />
+
+        <ImageView
+            android:id="@+id/myskin_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/used" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/skin_grid_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/skintitle" />
+
+    <LinearLayout
+        android:id="@+id/shop_show_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/shop_font_click"
+            android:duplicateParentState="true" >
+
+            <ImageView
+                android:id="@+id/shop_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip" />
+
+            <TextView
+                android:id="@+id/shop_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:text="aaa"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/myfont_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/unchecked" />
+    </LinearLayout>
+
+</LinearLayout>

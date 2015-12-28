@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <SkinRelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="wrap_content"
+        android:layout_height="46dip"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" >
+
+        <SkinEditText
+            android:id="@+id/et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/search"
+            android:hint="@string/searchnew"
+            android:maxLength="1000"
+            android:maxLines="1"
+            android:paddingRight="35dip"
+            android:textSize="16sp" />
+
+        <SkinButton
+            android:id="@+id/bt_clear"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/clear" />
+    </SkinRelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="46dip"
+        android:layout_alignParentTop="true" >
+
+        <include layout="@layout/title" />
+    </RelativeLayout>
+
+    <SkinRelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dip"
+        android:background="@drawable/top_base"
+        android:visibility="gone" >
+
+        <SkinButton
+            android:id="@+id/bt_threadsms"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/sms"
+            android:textColor="@color/sms"
+            android:textSize="17sp" />
+
+        <SkinButton
+            android:id="@+id/bt_collection"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/collection"
+            android:textColor="@color/sms"
+            android:textSize="17sp" />
+    </SkinRelativeLayout>
+    <!-- android:layout_alignParentBottom="true" -->
+
+    <SkinButton
+        android:id="@+id/bt_editsms"
+        android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bt_editsms_xml"
+        android:gravity="center"
+        android:text="@string/editSms"
+        android:textColor="@color/t_editsms"
+        android:textSize="18sp" />
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt_editsms"
+        android:layout_below="@id/tt"
+        android:flipInterval="10"
+        android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out"
+        android:persistentDrawingCache="animation" >
+
+        <ListView
+            android:id="@+id/lv_thread_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:drawSelectorOnTop="false"
+            android:listSelector="#00000000"
+            android:scrollbarThumbVertical="@drawable/scroll" />
+    </ViewFlipper>
+</SkinRelativeLayout>

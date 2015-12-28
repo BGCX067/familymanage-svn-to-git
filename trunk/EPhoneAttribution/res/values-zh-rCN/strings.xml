@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">手机归属地</string>
+    <string name="number">号码:</string>
+    <string name="province">省份:</string>
+    <string name="city">城市:</string>
+    <string name="area_code">区号:</string>
+    <string name="zip_code">邮编:</string>
+    <string name="card">类型:</string>
+    <string name="search">查询</string>
+    <string name="input_number">请输入手机号码!</string>
+    <string name="wrong_number">号码不正确!</string>
+    <string name="fail">查询失败,请检查网络!</string>
+</resources>

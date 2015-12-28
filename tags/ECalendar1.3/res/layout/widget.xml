@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="250dp"
+android:layout_height="100dp"
+android:background="@drawable/back"
+android:orientation="horizontal"
+>
+	<LinearLayout
+	android:layout_width="100dp"
+	android:layout_height="fill_parent"
+	android:gravity="center_vertical"
+	android:paddingLeft="13dp"
+	>
+	<ImageView
+	android:layout_width="80dp"
+	android:layout_height="80dp"
+	android:id="@+id/imageView_widget"
+	>
+	</ImageView>
+	</LinearLayout>
+	<LinearLayout
+	android:layout_width="150dp"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:id="@+id/linearlayout_date"
+	android:orientation="vertical"
+	>
+		<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:textSize="40sp"
+		android:textColor="#ffffff"
+		android:id="@+id/textview_day_week">
+		</TextView>
+		<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#ffffff"
+		android:layout_marginRight="5dp"
+		android:gravity="center"
+		android:id="@+id/textview_solar_time"
+		>
+		</TextView>
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#ffffff"
+		android:layout_marginLeft="5dp"
+		android:gravity="center"
+		android:id="@+id/textview_lunar_time"
+		>
+		</TextView>
+		</LinearLayout>
+		
+	</LinearLayout>
+</LinearLayout>

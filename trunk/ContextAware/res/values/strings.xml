@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ContextAwareActivity!</string>
+    <string name="app_name">ContextAware</string>
+    <string name="scan">扫描设备</string>
+    <string name="start">启动</string>
+    <string name="stop">停止</string>
+    <string name="signal_strength">信号强度</string>
+    <string name="store">保存配置</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="ok">确定</string>
+    <string name="scanning">正在扫描...</string>
+    <string name="has_started">服务已启动</string>
+    <string name="has_stopped">服务已停止</string>
+    <string name="minute">分钟</string>
+    <string name="scan_interval">扫描间隔设置</string>
+    
+    <array name="profile">
+        <item>标准</item>
+        <item>静音</item>
+        <item>震动</item>
+    </array>
+    
+    <array name="strength">
+        <item>强</item>
+        <item>弱</item>
+    </array>
+    
+    <string name="profile">情景模式选择</string>
+	<string name="DeviceName">Device Name</string>
+	<string name="DeviceMacAddress">Device Mac Address</string>
+	<string name="name">设备名称</string>
+	<string name="mac">设备地址</string>
+	<string name="Sensitivity">临界点</string>
+	<string name="SetSensitivity">点击选择配置敏感度</string>
+	<string name="Setprofile">点击选择情景模式</string>
+	<string name="Success">Set Context Aware Sucess!</string>
+	<string name="Error">Set Context Aware Error!</string>
+	<string name="ConfigList">已有配置</string>
+	<string name="ScanningList">附近设备</string>
+<string name="BlueToothEnable">该配置项已被选择</string>
+<string name="BlueToothDisable">该配置项未被选择</string>
+<string name="DeleteConfig">删除配置</string>
+<string name="RestConfig">重置配置</string>
+</resources>

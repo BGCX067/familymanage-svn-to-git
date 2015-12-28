@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lr_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="46dip"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/base" >
+
+    <SkinButton
+        android:id="@+id/bt_send"
+        android:layout_width="42dip"
+        android:layout_height="24dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/bt_xml"
+        android:text="@string/send"
+        android:textColor="@color/talk_send_color" />
+
+    <SkinTextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bt_send"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:textColor="@color/talk_edit_count"
+        android:textSize="10sp" />
+
+    <SkinEditText
+        android:id="@+id/et_body"
+        style="@style/et_input_box_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dip"
+        android:layout_toLeftOf="@id/bt_send"
+        android:hint="@string/input_body"
+        android:maxLength="970"
+        android:maxLines="2"
+        android:minHeight="33dip"
+        android:paddingLeft="5dip"
+        android:textColor="@color/talk_inputbody_color" />
+
+</SkinRelativeLayout>

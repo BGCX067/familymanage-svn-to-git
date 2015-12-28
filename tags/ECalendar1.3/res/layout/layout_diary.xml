@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+	<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="5dp"
+	android:paddingRight="5dp"
+	android:id="@+id/linearlayout_main"
+	android:background="@drawable/list_bg"
+	>
+		<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/text_no_diary"
+		android:textSize="30sp"
+		android:gravity="center"
+		android:text="@string/no_diary">
+		</TextView>
+	    <ListView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/listview_diary"
+	    android:paddingTop="20dp"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:cacheColorHint="#00000000"
+		android:listSelector="#00000000"
+		android:divider="#00000000"
+		android:paddingBottom="50dp"
+		android:fadingEdge="none"
+		android:fadingEdgeLength="0dp"
+	    >
+	    </ListView>
+	</LinearLayout>
+	<LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/linearlayout_delete"
+	android:visibility="gone"
+	android:layout_gravity="center_horizontal|bottom">
+		<Button
+	    android:text="@string/delete"
+	    android:gravity="center"
+	    android:id="@+id/button_delete"
+	    android:layout_width="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_height="50dp"
+	    >
+	    </Button>
+	    <Button
+	    android:text="@string/cancel"
+	    android:id="@+id/button_cancel"
+	    android:layout_weight="1"
+	    android:gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="50dp"
+	    >
+	    </Button>
+    </LinearLayout>
+</FrameLayout>

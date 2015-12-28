@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+<!-- <include layout="@layout/title_1"/> -->
+
+    <include layout="@layout/edit" />
+
+    <ListView
+        android:id="@+id/lv_talk_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lr_bottom"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:listSelector="#00000000"
+        android:paddingTop="46dip"
+        android:scrollbarThumbVertical="@drawable/scroll"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+</SkinRelativeLayout>

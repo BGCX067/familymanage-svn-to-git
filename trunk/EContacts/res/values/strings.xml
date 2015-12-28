@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, EContactsActivity!</string>
+    <string name="app_name">EContacts</string>
+    <string-array name="group_array">
+        <item>好友</item>
+        <item>家人</item>
+        <item>同学</item>
+        <item>同事</item>
+    </string-array>
+</resources>

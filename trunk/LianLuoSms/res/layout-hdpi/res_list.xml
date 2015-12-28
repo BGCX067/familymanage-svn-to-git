@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/res_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+           
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_hot_res"
+                style="@style/ResStyleText"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/res_hot"
+                android:textColor="@color/res_def" />
+
+            <TextView
+                android:id="@+id/text_free_res"
+                style="@style/ResStyleText"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/res_free"
+                android:textColor="@color/res_choice" />
+
+            <TextView
+                android:id="@+id/text_new_res"
+                style="@style/ResStyleText"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/res_new"
+                android:textColor="@color/res_def" />
+       
+     <TextView
+                android:id="@+id/text_my_res"
+                style="@style/ResStyleText"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/shop_tab1"
+                android:textColor="@color/res_def" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/res_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/res_hot_img"
+                    android:layout_width="10dip"
+                    android:layout_height="5dip"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                  />
+
+                <TextView
+                    android:id="@+id/res_free_img"
+                    android:layout_width="10dip"
+                    android:layout_height="5dip"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/res_pitch" />
+
+                <TextView
+                    android:id="@+id/res_new_img"
+                    android:layout_width="10dip"
+                    android:layout_height="5dip"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/res_my_img"
+                    android:layout_width="10dip"
+                    android:layout_height="5dip"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:flipInterval="1000"
+        android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out"
+        android:persistentDrawingCache="animation"
+         >
+        
+        <include
+            android:id="@+id/free_g"
+            layout="@layout/res_viewflipper_layout" />
+
+        <include
+            android:id="@+id/hot_g"
+            layout="@layout/res_viewflipper_layout" />
+
+        <include
+            android:id="@+id/new_g"
+            layout="@layout/res_viewflipper_layout" />
+
+        <include
+            android:id="@+id/my_g"
+            layout="@layout/res_my" />
+    </ViewFlipper>
+
+</LinearLayout>

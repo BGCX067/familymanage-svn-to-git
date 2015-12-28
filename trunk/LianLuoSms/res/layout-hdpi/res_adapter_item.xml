@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/res"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shop_font_click"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/res_title"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/res_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="猫样生活"
+                    android:textColor="@color/res_disn"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/res_str"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip" >
+
+                    <RatingBar
+                        android:id="@+id/res_star"
+                        style="@style/roomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="3"
+                        android:stepSize="1" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/res_title_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="免费"
+                    android:textColor="@color/res_disn"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!--  -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/res_progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/res_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="0%"
+                            android:textColor="@color/res_def" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="" />
+
+                        <ImageView
+                            android:id="@+id/res_stage"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/res_start" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/res_detail_progressbar_new"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#00000000"
+                        android:progressDrawable="@drawable/progress_style" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/res_quick_buy"
+                    android:layout_width="80dp"
+                    android:layout_height="37dp"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="7dip"
+                    android:text="下载"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/res_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3200次评分"
+                    android:textColor="@color/res_def" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/partition_h" />
+
+</LinearLayout>

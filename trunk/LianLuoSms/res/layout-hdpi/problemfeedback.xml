@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <SkinRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg" >
+
+        <SkinRelativeLayout
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/top" >
+            
+            <SkinButton
+            	android:id="@+id/backButton"
+            	android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+        		 android:layout_marginLeft="10dip"
+        		android:layout_centerVertical="true"
+            	android:background="@drawable/res_back"></SkinButton>
+
+            <SkinTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/problemsteps"
+                android:textColor="@color/title"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </SkinRelativeLayout>
+        <SkinTextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/number"
+        	android:layout_below="@id/title"
+        	android:layout_marginLeft="20dip"
+        	android:layout_marginTop="10dip"
+        	android:text="@string/putInNumaber"
+        	android:textColor="@color/defcolor"></SkinTextView>
+        	
+        <SkinEditText
+            android:id="@+id/numberEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:maxLength="11"
+            android:numeric="integer" />
+
+
+		   <SkinTextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/Problem"
+        	android:layout_below="@id/numberEdit"
+        	android:layout_marginLeft="20dip"
+        	android:layout_marginTop="20dip"
+        	android:text="@string/putInProblem1"
+        	android:textColor="@color/defcolor"></SkinTextView>
+
+        <SkinButton
+            android:id="@+id/problemButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:gravity="center"
+            android:text="@string/putIn" />
+        <SkinEditText
+            android:id="@+id/problemEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Problem"
+            android:layout_above="@id/problemButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:gravity="top"
+            android:hint="@string/SaySomething"
+            android:maxLength="1000" />
+
+     
+    </SkinRelativeLayout>
+
+</SkinLinearLayout>

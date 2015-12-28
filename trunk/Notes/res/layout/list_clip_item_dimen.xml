@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/list_item"
+android:paddingTop="@dimen/list_clip_item_padding_top"
+android:paddingBottom="@dimen/list_clip_item_padding_bottom"
+android:gravity="center_vertical"
+>
+	<ImageView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/imageview_clip"
+	    android:contentDescription="@string/app_name"
+	    />
+</LinearLayout>

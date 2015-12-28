@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout
+	android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_alignParentBottom="true"
+	android:background="@drawable/base"
+	android:layout_height="wrap_content"
+	android:id="@+id/lr_bottom">
+
+		
+		 <SkinLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base"
+                android:orientation="horizontal"
+                android:paddingBottom="5dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:paddingTop="5dip" >
+
+                <EditText
+                    android:id="@+id/et_body"
+                    style="@style/et_input_box_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:hint="@string/input_body"
+                    android:maxLength="970"
+                    android:maxLines="2"
+                    android:minHeight="35dip"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/talk_inputbody_color" />
+
+                <LinearLayout
+                    android:id="@+id/button_with_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <SkinButton
+                        android:id="@+id/bt_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="0dip"
+                        android:background="@drawable/bt_xml"
+                        android:text="@string/send"
+                        android:textColor="@color/talk_send_color" />
+
+                    <SkinTextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dip"
+                        android:gravity="center_horizontal|bottom"
+                        android:paddingLeft="3dip"
+                        android:paddingRight="3dip"
+                        android:paddingTop="0dip"
+                        android:maxLines="1"
+                        android:textColor="@color/talk_edit_count"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </SkinLinearLayout>
+</SkinRelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#fafafa">
+
+    <!-- User Name -->
+    <LinearLayout
+    android:background="#fafafa"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    style="@style/User_Layout">
+    
+    
+    	<View
+  			android:layout_width="match_parent"
+  			android:layout_height="1dip"
+  			android:background="@android:drawable/divider_horizontal_bright"/>
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/SetUserName"
+			style="@style/TextAppearance.TextStyle"
+			/>
+		<EditText	
+			android:id="@+id/username"  	
+			android:layout_width="fill_parent" 	
+			android:layout_height="wrap_content" 
+			android:text="@string/UserName"
+			android:capitalize="sentences"
+			android:gravity="center_vertical"
+			/>
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/SetUserPwd"
+			style="@style/TextAppearance.TextStyle"
+			/> 
+		<EditText
+			android:id="@+id/userpwd"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:password="true"
+			android:capitalize="sentences"
+			android:gravity="center_vertical"
+			/>
+    	<View
+  			android:layout_width="match_parent"
+  			android:layout_height="1dip"
+  			android:background="@android:drawable/divider_horizontal_bright"/>
+    	<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingLeft="38dip"
+            android:paddingRight="38dip"
+            android:paddingBottom="1dip"
+            android:background="@android:drawable/bottom_bar" >
+            <Button android:id="@+id/Login_In"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/Login_In"
+            />
+
+        </LinearLayout>	
+	</LinearLayout>
+</LinearLayout>

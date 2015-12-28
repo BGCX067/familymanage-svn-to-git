@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 英语 -->
+<resources>
+    <string name="not_register">This number is not registered </string>
+    <string name="bukechongfushouc">Already added to favorite</string>
+	<string name="verify_limit">You have reached your maximum limit of applying verification code, please try tomorrow~</string>
+    <string name="password">Password</string>
+	<string name="old_password">Old password</string>
+	<string name="new_password">New password</string>
+	<string name="repeat_password">Repeat password</string>
+	<string name="reset_success">Succeeded in password reset, please login again.</string>
+	<string name="change_success">Succeeded in password modification, please login again.</string>
+	<string name="account_manage">Account management</string>
+	<string name="input_right_phone">Please input correct phone number</string>
+	<string name="user_nick">Nickname</string>
+	<string name="res_lib">Templates store</string>
+	<string name="user_signature">Individual signature</string>
+	<string name="user_info">Information</string>
+	<string name="change_head">Modify avatar</string>
+	<string name="change_nick">Modify nickname</string>
+	<string name="user_phone">Cellphone number</string>
+	<string name="verify_over">Failed to gain verification code, please try again.</string>
+	<string name="account_error">Invalid username or password, please try again.</string>
+	<string name="logout">Logout</string>
+	<string name="regist_fail">Registration failed</string>
+	<string name="regist_success">Registration successful</string>
+	<string name="verify_fail">Verification failed</string>
+	<string name="registed">This account has been registered, please try a new one.</string>
+	<string name="waiting">Please wait</string>
+    <string name="account">Account number</string>
+    <string name="forget_pw">Forgot your password</string>
+	<string name="find_pw">Get back password</string>
+	<string name="change_pw">To change your password</string>
+	<string name="reset_pw">Reset password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="login_message">Use lianluoquan account to login.</string>
+    <string name="verify">Checking verification code</string>
+    <string name="verify_message">The verification code has been sent to your cellphone by message, please input verification code for password reset.</string>
+    <string name="verify_info">If you haven\'t received the message in 59s, please return to verify again.</string>
+    <string name="register_message">To ensure your account is safety, you will receive an ordinary verification message when you registered.</string>
+    <string name="country">Country</string>
+    <string name="phone_number">Cellphone number</string>
+	<string name="input_number">Please insert your registered cellphone number</string>
+	<string name="pwr_message">Please input 6-20 digits or letters to reset your password.</string>
+	<string name="pw_message">Please input 6-20 digits or letters as your password.</string>
+	<string name="pwc_message">Please input 6-20 digits or letters as your new password.</string>
+	<string name="opw_error">Wrong old password</string>
+    <string name="confirm_pw">Confirm the password</string>
+    <string name="phone_null">The cellphone number can not be blank!</string>
+    <string name="pw_null">Password can not be blank!</string>
+    <string name="verify_null">Please input verification code</string>
+    <string name="pw_not_same">Please input the same password</string>
+    <string name="res_text_free">Free</string>
+    <string name="res_dl">Downloaded</string>
+    <string name="res_ding">Downloading</string>
+    <string name="res_ins">Installed</string>
+    <string name="res_payed">Paid</string>
+    <string name="res_pay">Fees:</string>
+    <string name="res_yuan">RMB</string>
+    <string name="res_ml">Downloads *</string>
+    <string name="res_hot">Premium</string>
+    <string name="res_free">Free</string>
+    <string name="res_new">Popular</string>
+    <string name="res_downloading">Downloading</string>
+    <string name="res_downloaded">The download is complete</string>
+    <string name="download_times">Downloads </string>
+    <string name="user_view_history">Other users also browsed the following templates</string>
+    <string name="loading">Loading</string>
+    <string name="desc">Explanation :</string>
+	<string-array name="countrys_array">
+        <item>China</item>
+        <item>USA</item>
+    </string-array>
+    <string name="login_toast">Please login first</string>
+    <string name="install_paid">%1$s has paid, to install now?</string> 
+    <string name="app_name">Hi.messenger</string>
+	<string name="sms">Message</string>
+	<string name="collection">Favorite</string>
+	<string name="input_body">press to insert</string>
+	<string name="send">Send</string>
+	<string name="edit">Edit</string>
+	<string name="play">Play</string>
+	<string name="call">Call</string>
+	<string name="forward">Forward</string>
+	<string name="resend">Resend</string>
+	<string name="has_resend">Sent</string>
+	<string name="addcontact">Add to contact</string>
+	<string name="copysms">Copy</string>
+	<string name="see_details">Details</string>
+	<string name="isdelete_a_sms">Delete the message?</string>
+	<string name="confirm">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="reciveTime">Time of received</string>
+	<string name="sendTime">Time of sent</string>
+	<string name="sender">Sender</string>
+	<string name="receiver">Recipient</string>
+	<string name="smsType">Type of message</string>
+	<string name="sms_details">Details</string>
+	<string name="noread_sms">unread message</string>
+	<string name="skin">To change avatar</string>
+	<string name="addCollect">Add to favorite</string>
+	<string name="cancelCollect">Cancel</string>
+	<string name="draft">Draft</string>
+	<string name="savedraft">Draft saved</string>
+	<string name="textTooLong">Text is too long</string>
+	<string name="hasSend">Sent</string>
+	<string name="searchInputName">Contact name</string>
+	<string name="searchInputNumber">Contact number</string>
+	<string name="searchInputContent">Insert contect</string>
+	<string name="selectAllMark">Mark all</string>
+    <string name="removeMark">Unmark</string>
+    <string name="deleteSelectedMark">Delete marked</string>
+    <string name="deleteMark">Delete all the threads?</string>
+    <string name="delete_smsing">Message deleting</string>
+	<string name="inputPhone">Recipient</string>
+	<string name="inputBody">Press to insert</string>
+	<string name="historylinkman">History</string>
+	<string-array name="linkManString">
+		<item>Delete</item>
+		<item>Cancel</item>
+	</string-array>
+	<string name="smsbodynull">Empty</string>
+	<string name="notify_phonenumber">Wrong number</string>
+	<string name="notify_phonenumbernull">The message will be lost because of invalid recipient</string>
+	<string name="giveUp">Quit</string>
+	<string name="qkls">Clear history</string>
+	<string name="delete_history">Delete the history</string>
+	<string name="showcontact">Search the contact</string>
+	<string name="checkall">Select all</string>
+	<string name="checknull">Deselect</string>
+	<string name="linkmanInvalid">Invalid contact</string>
+	<string name="linkman">Contact</string>
+	<string name="recentContact">Recent contact</string>
+	<string name="lookselect">View selected</string>
+	<string name="inviteBody">I am using Hi.messenger right now, which gives you a phenomenon SMS reading experience to a colorful lifestyle. try on: w.himessenger.com</string>
+	<string name="setting1">Notification bar</string>
+	<string name="setting2">Animation  notification</string>
+	<string name="setting3">Vibration notification</string>
+	<string name="setting4">Quick message</string>
+	<string name="setting5">Templates store</string>
+	<string name="setting6">Check for updates</string>
+	<string name="setting7">Share</string>
+	<string name="about_body">
+        \n
+		Hi.messenger \n
+		Version: # \n
+		Copyright reserved by Beijing Digital Grid Technology Co., Ltd\n
+		Official Website: www.himessenger.com\n
+		Support: himessenger@haolianluo.com\n
+		Customer Service: +86 400 616 9868\n
+		Fax：010-65913171\n
+		</string>
+	<string name="problemsteps">Feedback</string>
+	<string name="putInNumber">Your phone number</string>
+	<string name="putInProblem">Insert feedback</string>
+	<string name="fk_loading">Processing feedback, please wait</string>
+    <string name="fkcg">Completed</string>
+    <string name="fksb">Failed</string>
+    <string name="putIn">Submit</string>
+    <string name="simInvalid">No insert SIM card or contains invalid SIM card, please try later</string>
+    <string name="nNewSms">_unread message</string>
+    <string name="editSms">Create Message</string>
+    <string name="putInNumaberAndProblem">Please enter your phone number and feedback</string>
+    <string name="inputsOkNumber">Please insert correct number</string>
+    <string name="feedbackOk">Completed</string>
+    <string name="feedbackErr">Failed</string>
+    <string name="checkUpdate">Checking update</string>
+    <string name="nonew">This is the latest version</string>
+    <string name="havenewTitle">Update notification</string>
+    <string name="havenew">Found a new version of Hi.messenger</string>
+    <string name="update">Update</string>
+    <string name="wzt">No subject</string>
+    <string name="zt">Subject:</string>
+    <string name="sendFail">Sending failed</string>
+    <string name="search">Search</string>
+    <string name="empty">Clear</string>
+    <string name="mark">Mark</string>
+    <string name="setting">Settings</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="delete_all_sms">Delete all the threads</string>
+    <string name="ensure">OK</string>
+    <string name="calcel">Cancel</string>
+    <string name="deleteSmsing">Deleting message……</string>
+    <string name="nosms">No more mesassage</string>
+    <string name="searchName">By contacts</string>
+	<string name="searchNumber">By numbers</string>
+	<string name="searchContent">By SMS contents</string>
+	<string name="lookUp">View</string>
+	<string name="reply">Reply</string>
+	<string name="calledit">Edit before call</string>
+	<string name="shortcutMenu">Shortcut menu</string>
+	<string-array name="shortcutMenuItem">
+	    <item>Resource Library</item>
+	    <item>Settings</item>
+	    <item>Shares</item>
+	    <item>To say something</item>
+	</string-array>
+	<string name="firstone">The first</string>
+	<string name="lastone">The last</string>
+	<string name="finishsend">Sent</string>
+	<string name="seeAll">To see all</string>
+	<string name="shop_download_button">Download management</string>
+    <string name="shop_tab1">My Template</string>
+    <string name="shop_tab2">Download the theme</string>
+    <string name="shop_tab3">Download the animation</string>
+    <string name="shop_tab4">Download the font</string>
+    <string name="shop_tab5">Download the card</string>
+    <string name="my_theme">My theme</string>
+    <string name="my_animation">Animation reminder</string>
+    <string name="my_font">My font</string>
+    <string name="my_card">My card</string>
+    <string name="notice">Notice</string>
+    <string name="download_started">Starting download and added to download management</string>
+    <string name="delete_notice">All downloads will be lost after deleted</string>
+    <string name="delete">Delete</string>
+    <string name="deleted">Deleted!</string>
+    <string name="download_success">Download successful, please to install</string>
+    <string name="download_fail">Download failed</string>
+    <string name="download_stop">Download stopped</string>
+    <string name="res_count">Total %1$d items</string>
+    <string name="progress_down">Downloading, please waiting…</string>
+    <string name="connect_fail">Failed to connect internet</string>
+    <string name="no_connect">No network</string>
+    <string name="no_model">you have no template currently, please go to download</string>
+    <string name="pick_model">Your favorite template!</string>
+    <string name="confirm_install">Confirm to install</string>
+    <string name="install">Install</string>
+    <string name="install_charge">%1$s, to install?</string>
+    <string name="install_free">%1$s is free, confirm to install?</string>
+    <string name="skin_popu_title">Preview</string>
+    <string name="default_skin">Default theme</string>
+    <string name="default_font">Default font</string>
+    <string name="default_animation">Default animation</string>
+    <string name="skin_top3_1">Total</string>
+    <string name="skin_top3_2">Items</string>
+    <string name="skin_sorry">Sorry, no preview pics for this avatar</string>
+    <string name="set_skin">Theme set successful as</string>
+    <string name="set_font">Fonts set successful as</string>
+    <string name="set_animation">Animation set successful as</string>
+    <string name="spopu_bt_dl">Download</string>
+    <string name="spopu_bt_finish">Downloaded</string>
+    <string name="skin_bt_use">Apps.</string>
+    <string name="skin_bt_useing">Applied</string>
+    <string name="title_animation">My animation</string>
+    <string name="toast_info_new">Connecting to the server is timed out, please try again later</string>
+    <string name="loading_more">You have reached the last page</string>
+    <string name="loging_after">Messages can be sending by network data after login</string>
+    <string name="after_noshow">Do not remind me again</string>
+    <string name="imtalk">To say something</string>
+    <string name="logout_confirm">are you sure to logout?</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">海贼闹钟</string>
+    <string name="app_alarm">海贼闹钟</string>
+    <string name="alarm">海贼闹钟</string>
+    <string name="my_alarm">我的闹钟</string>
+    <string name="add_alarm">添加闹钟</string>
+    <string name="set_alarm">设置闹钟</string>
+    <string name="setting">设置</string>
+    <string name="no_alarm">还没有添加闹钟哦</string>
+    <string name="time">时间</string>
+    <string name="repeat">闹钟重复</string>
+    <string name="delay_time">再响时长</string>
+    <string name="alert_info">提醒文字</string>
+    <string name="alert_ring">铃声</string>
+    <string name="is_ring">响铃</string>
+    <string name="is_vibrate">振动</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="no_repeat">一律不</string>
+    <string name="delete">删除</string>
+    <string name="delay">延时</string>
+    <string name="stop">停止</string>
+    <string name="store">保存</string>
+    <string name="delete_message">删除此闹钟?</string>
+    <string name="push">推迟%1$s分钟</string>
+    <string name="select_ringtone">选择铃声</string>
+    <string name="alarm_set">闹钟已设置</string>
+    <string name="alarm_ringing">闹钟响啦</string>
+    <string name="insert_sd_card">请插入SD卡并添加MP3文件</string>
+    <string name="share">分享</string>
+    <string name="about">关于</string>
+    <string name="notify_icon">是否显示通知栏图标</string>
+    <string name="share_way">分享方式</string>
+    <string name="share_content">我正在使用安卓软件"海贼闹钟",它是一款既准时又方便的闹钟,你也赶快去下载吧!</string>
+    <string name="update_log">感谢大家使用海贼闹钟!本版本修复部分机型延迟不响的BUG,调整了闹钟重复的选项,可设置是否显示通知栏图标</string>
+    <string name="author">作者: 翊轩</string>
+    <string name="version">版本: </string>
+    
+    <string-array name="repeat_array">
+        <item>一律不</item>
+        <item>每天</item>
+        <item>工作日</item>
+        <item>周末</item>
+        <item>自定义</item>
+    </string-array>
+    
+    <string-array name="week_array">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+    
+    <string-array name="week_short_array">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+    
+    <string-array name="ringtone_array">
+        <item>luffy</item>
+        <item>nami</item>
+        <item>shanji</item>
+        <item>zorro</item>
+        <item>usopp</item>
+        <item>chopper</item>
+        <item>robin</item>
+        <item>franky</item>
+        <item>bruck</item>
+    </string-array>
+    
+    <string-array name="ringtone_type">
+        <item>海贼铃声</item>
+        <item>系统铃声</item>
+        <item>MP3铃声</item>
+    </string-array>
+    
+    <string name="in_one_minute">闹钟将于从现在起少于1分钟后启动.</string>
+    
+    <string-array name="alarm_toast">
+        <item>闹钟将于从现在起 %1$s后启动.</item>
+        <item>闹钟将于从现在起 %1$s %2$s后启动.</item>
+        <item>闹钟将于从现在起 %1$s %2$s %3$s后启动.</item>
+    </string-array>
+    <string name="day">天</string>
+    <string name="days">天</string>
+    <string name="hour">小时</string>
+    <string name="hours">小时</string>
+    <string name="minute">分钟</string>
+    <string name="minutes">分钟</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top"
+    android:layout_width="fill_parent"
+    android:layout_height="46dip"
+    android:background="@drawable/top" >
+
+    <SkinButton
+        android:id="@+id/bt_add"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/bt_add_contact_xml"
+        android:textColor="@color/defcolor" />
+
+    <LinearLayout
+        android:id="@+id/recipients_subject_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dip"
+        android:layout_toLeftOf="@id/bt_add"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip"
+        android:visibility="gone" >
+
+        <ViewStub
+            android:id="@+id/recipients_editor_stub"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/recipients_editor" />
+
+        <EditText
+            android:id="@+id/subject"
+            style="@style/et_input_box_style"
+            android:layout_width="fill_parent"
+			android:layout_height="33dip"
+            android:autoText="true"
+            android:capitalize="sentences"
+            android:hint="@string/inputPhone"
+            android:inputType="phone"
+            android:maxLength="970"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:phoneNumber="true"
+	        android:textColor="@color/talk_inputbody_color"
+	        android:textSize="16sp"
+	        android:textStyle="bold" />
+    </LinearLayout>
+
+</SkinRelativeLayout>

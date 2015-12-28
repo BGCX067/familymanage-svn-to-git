@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="240dip" 
+	android:layout_height="wrap_content" android:orientation="vertical"
+	>
+	<SkinTextView android:id="@+id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/about"
+		android:layout_centerHorizontal="true" android:gravity="center_horizontal"
+		android:textSize="20sp" android:textStyle="bold" />
+	<SkinTextView android:layout_width="fill_parent" android:layout_height="2dip"
+		android:background="@color/title" android:layout_below="@id/title"
+		android:layout_marginTop="10dip" android:layout_marginBottom="10dip"
+		android:id="@+id/line" />
+	<SkinTextView android:id="@+id/body" android:layout_below="@id/line"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</SkinRelativeLayout>  

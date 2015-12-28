@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 西语new -->
+<resources>
+    <string name="not_register">Este número de teléfono no se ha registrado como contacto de Círculo de Contactos</string>
+    <string name="bukechongfushouc">Usted ya ha guardado el SMS</string>
+	<string name="verify_limit">El número de las veces que ha obtenido el código de verificación ha llegado su máximo, por favor intente de nuevo mañana</string>
+    <string name="toast_info_new">Se ha agotado el tiempo la conexión con el servidor, por favor inténtelo más tarde</string>
+    <string name="loading_more">es la última página actualmente</string>
+    <string name="loging_after">Después de iniciar sesión, puede utilizar los datos para ser enviados</string>
+    <string name="after_noshow">No se le pedirá en el futuro</string>
+    <string name="imtalk">Digo algunas palabras</string>
+    <string name="logout_confirm">¿Cancelar?</string>
+    <string name="password">Contraseña</string>
+	<string name="old_password">Antigua contraseña</string>
+	<string name="new_password">Nueva contraseña</string>
+	<string name="repeat_password">Repita su contraseña</string>
+	<string name="reset_success">Restablecimiento de contraseñas se ha realizado correctamente,por favor vuelva a entrar.</string>
+	<string name="change_success">La contraseña se ha modificado correctamente,por favor acceda de nuevo.</string>
+	<string name="account_manage">Administración de cuentas</string>
+	<string name="input_right_phone">Por favor,introduzca el número de móvil correcto.</string>
+	<string name="user_nick">Nombre de Usuario</string>
+	<string name="res_lib">Biblioteca de recursos</string>
+	<string name="user_signature">Firma personalizada</string>
+	<string name="user_info">Información personal</string>
+	<string name="change_head">Cambiar imagen</string>
+	<string name="change_nick">Cambiar nombre de usuario</string>
+	<string name="user_phone">Número de teléfono</string>
+	<string name="verify_over">No puede adquirir el código de verificación,por favor inténtalo otra vez despúes.</string>
+	<string name="account_error">El nombre de usuario o la contraseña es incorrecto,por favor inténtelo de nuevo.</string>
+	<string name="logout">Cancelar</string>
+	<string name="regist_fail">Error de registro</string>
+	<string name="regist_success">Registro exitoso.</string>
+	<string name="verify_fail">Error de verificación</string>
+	<string name="registed">Esta cuenta se ha registrado,por favor vuelva a entrar.</string>
+	<string name="waiting">Espera por favor.</string>
+    <string name="account">Cuenta</string>
+    <string name="forget_pw">He olvidado mi contraseña.</string>
+	<string name="find_pw">Recordar contraseña</string>
+	<string name="change_pw">Modificar contraseña</string>
+	<string name="reset_pw">Restablecer contraseña</string>
+    <string name="register">Registro</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="login_message">También puede usar la cuenta de Social Hub para entrar.</string>
+    <string name="verify">Comprobar el código de verificación</string>
+    <string name="verify_message">El código de verificación ya se ha enviado a su móvil por SMS,por favor introdúzcalo para restablecer la contraseña.</string>
+    <string name="verify_info">Si no recibe en 59 segundos,por favor vuelva a verificar de nuevo.</string>
+    <string name="register_message">Para garantizar la seguridad de su cuenta, recibirá un mensaje de verificación ordinario al registrar.</string>
+    <string name="country">País</string>
+    <string name="phone_number">Número de móvil</string>
+	<string name="input_number">Por favor introduzca su número de móvil registrado.</string>
+	<string name="pwr_message">Por favor introduzca de 6-20 caracteres para restablecer su contraseña.</string>
+	<string name="pw_message">Por favor introduzca de 6-20 caracteres como su contraseña.</string>
+	<string name="pwc_message">Por favor introduzca de 6-20 caracteres como su contraseña.</string>
+	<string name="opw_error">Error al introducir antigua contraseña</string>
+    <string name="confirm_pw">Confirmar la contraseña.</string>
+    <string name="phone_null">El número de teléfono no puede estar vacío.</string>
+    <string name="pw_null">La contraseña no puede estar vacía.</string>
+    <string name="verify_null">Por favor introduzca el código de verificación.</string>
+    <string name="pw_not_same">Por favor introduzca la misma contraseña.</string>
+    <string name="res_text_free">Gratis</string>
+    <string name="res_dl">Descargado</string>
+    <string name="res_ding">Cargando</string>
+    <string name="res_ins">Ya ha sido instalado.</string>
+    <string name="res_payed">Ya ha sido pagado.</string>
+    <string name="res_pay">Costo :</string>
+    <string name="res_yuan">yuan</string>
+    <string name="res_ml">Descargar *</string>
+    <string name="res_hot">Artículos de pago</string>
+    <string name="res_free">Artículos gratuitos</string>
+    <string name="res_new">Los más descargados</string>
+    <string name="res_downloading">Cargando</string>
+    <string name="res_downloaded">Descarga finalizada</string>
+	<string name="download_times">Descargar </string>
+    <string name="user_view_history">Plantillas que otros usuarios descargaron</string>
+    <string name="loading">Cargando</string>
+    <string name="desc">Introducción :</string>
+	<string-array name="countrys_array">
+        <item>China</item>
+        <item>USA</item>
+    </string-array>
+    <string name="login_toast">Por favor primero inicie sesión</string>
+    <string name="install_paid">%1$s Descarga finalizada,instalar?</string>
+    <string name="app_name">Círculo de Contactos</string>
+	<string name="sms">Mensajes</string>
+	<string name="collection">Colectarse</string>
+	<string name="input_body">Hacer clic para entrar</string>
+	<string name="send">Enviar</string>
+	<string name="edit">Editar</string>
+	<string name="play">Reproducir</string>
+	<string name="call">Llamar</string>
+	<string name="forward">Reenviar</string>
+	<string name="resend">Reenviar</string>
+	<string name="has_resend">Mensaje enviado</string>
+	<string name="addcontact">Agregar contacto</string>
+	<string name="copysms">Copiar texto</string>
+	<string name="see_details">Detalles</string>
+	<string name="isdelete_a_sms">¿Si desea eliminar este mensaje?</string>
+	<string name="confirm">Confirmar</string>
+	<string name="cancel">Cancelar</string>
+	<string name="reciveTime">Hora de recepción</string>
+	<string name="sendTime">Hora de envío</string>
+	<string name="sender">Remitente</string>
+	<string name="receiver">Destinatario</string>
+	<string name="smsType">Tipo de Mensaje</string>
+	<string name="sms_details">Más información</string>
+	<string name="noread_sms">Mensajes no leidos</string>
+	<string name="skin">Cambiar tema</string>
+	<string name="addCollect">Añadir favoritos</string>
+	<string name="cancelCollect">Cancelar favoritos</string>
+	<string name="draft">Borrador</string>
+	<string name="savedraft">Se ha guardado como borrador</string>
+	<string name="textTooLong">El texto es demasiado largo</string>
+	<string name="hasSend">Mensaje enviado</string>
+	<string name="searchInputName">Introduzca nombre de contacto</string>
+	<string name="searchInputNumber">Introduzca número de contacto</string>
+	<string name="searchInputContent">Introduzca el contenido</string>
+	<string name="selectAllMark">Marcar todos</string>
+    <string name="removeMark">Cancelar el marco</string>
+    <string name="deleteSelectedMark">Borrar lo seleccionado</string>
+    <string name="deleteMark">¿Desea eliminar la información de usuario?</string>
+    <string name="delete_smsing">Eliminando…</string>
+	<string name="inputPhone">Destinatario</string>
+	<string name="inputBody">Click para escribir</string>
+	<string name="historylinkman">Historial</string>
+	<string-array name="linkManString">
+		<item>Eliminar</item>
+		<item>Cancelar</item>
+	</string-array>
+	<string name="smsbodynull">Está vacío</string>
+	<string name="notify_phonenumber">El número introducido es incorrecto</string>
+	<string name="notify_phonenumbernull">Mensaje descartado por usuario inválido</string>
+	<string name="giveUp">Renunciar</string>
+	<string name="qkls">Borrar el historial</string>
+	<string name="delete_history">Eliminar esta historia</string>
+	<string name="showcontact">Ver los contactos</string>
+	<string name="checkall">Seleccionar todo</string>
+	<string name="checknull">Deseleccionar todo</string>
+	<string name="linkmanInvalid">El contacto no es válido</string>
+	<string name="linkman">Contactos</string>
+	<string name="recentContact">Últimos contactos</string>
+	<string name="lookselect">Ver lo seleccionado</string>
+	<string name="inviteBody">Estoy usando "Círculo de Contactos", nueva forma de leer mensajes. Te lo recomiendo. w.himessenger.com</string>
+	<string name="setting1">Ocultar barra de mensajes</string>
+	<string name="setting2">Ocultar barra de íconos</string>
+	<string name="setting3">Interruptor de alertas de SMS Vibrador</string>
+	<string name="setting4">Conmutador de mensajes rápidos</string>
+	<string name="setting5">Biblioteca</string>
+	<string name="setting6">Comprobar si hay actualizaciones</string>
+	<string name="setting7">Compartir</string>
+	<string name="about_body">
+        \n
+        Círculo de Contactos v1.0(symbian 5th)\r\n 
+        Versión: # \n
+        Beijing Tianyu Digital Technology Co., Ltd. Todos los derechos reservados \r\n 
+        Web Oficial:http://www.lianluo.com\r\n
+        WAP:http://wap.lianluo.com\r\n 
+        Suporta:support@lianluo.com\r\n 
+        Servicio al Cliente:400-616-9868"\n
+        Fax：010-65913171\n
+		</string>
+	<string name="problemsteps">Realimentación</string>
+	<string name="putInNumber">Su número de teléfono</string>
+	<string name="putInProblem">Por favor introduce comentarios sobre el contenido</string>
+	<string name="fk_loading">Está retroalimentando, por favor espere ...</string>
+    <string name="fkcg">Retroalimentación exitosa</string>
+    <string name="fksb">Retroalimentación falló</string>
+    <string name="putIn">Presentar</string>
+    <string name="simInvalid">No hay tarjeta SIM o no es válida , por favor revise y vuelva a intentarlo</string>
+    <string name="nNewSms">Mensajes no leidos</string>
+    <string name="editSms">Redactar</string>
+    <string name="putInNumaberAndProblem">Introduzca su teléfono y comentario</string>
+    <string name="inputsOkNumber">Por favor, introduzca el número de teléfono correcto</string>
+    <string name="feedbackOk">Retroalimentación exitosa</string>
+    <string name="feedbackErr">Retroalimentación falló</string>
+    <string name="checkUpdate">Comprobar actualizaciones</string>
+    <string name="nonew">Está utilizando la última versión</string>
+    <string name="havenewTitle">Aviso de Actualización</string>
+    <string name="havenew">Nueva actualización para Círculo de Contactos!</string>
+    <string name="update">Actualizar</string>
+    <string name="wzt">No hay ninguna asignatura</string>
+    <string name="zt">Asignatura:</string>
+    <string name="sendFail">Envío fallido</string>
+    <string name="search">Buscar</string>
+    <string name="empty">Vaciar</string>
+    <string name="mark">Marcar</string>
+    <string name="setting">Configurar</string>
+    <string name="about">Acerca de</string>
+    <string name="share">Compartir</string>
+    <string name="delete_all_sms">Se va a borrar todos los mensajes</string>
+    <string name="ensure">Aceptar</string>
+    <string name="calcel">Cancelar</string>
+    <string name="deleteSmsing">Eliminando…</string>
+    <string name="nosms">No hay mensajes para eliminar</string>
+    <string name="searchName">Ordenar por nombre</string>
+	<string name="searchNumber">Ordenar por número</string>
+	<string name="searchContent">Ordenar por mensaje</string>
+	<string name="lookUp">Ver</string>
+	<string name="reply">Responder</string>
+	<string name="calledit">Editar antes de llamar</string>
+	<string name="shortcutMenu">Menú rápido</string>
+	<string-array name="shortcutMenuItem">
+	    <item>Biblioteca</item>
+	    <item>Configurar</item>
+	    <item>Compartir</item>
+	    <item>Digo algunas palabras</item>
+	</string-array>
+	<string name="firstone">Poner como primer mensaje</string>
+	<string name="lastone">Poner como último mensaje</string>
+	<string name="finishsend">Enviado</string>
+	<string name="seeAll">Ver todo</string>
+	<string name="shop_download_button">Administración de descarga</string>
+    <string name="shop_tab1">Mis plantillas</string>
+    <string name="shop_tab2">Descargar tema</string>
+    <string name="shop_tab3">Descargar animación</string>
+    <string name="shop_tab4">Descargar fuente</string>
+    <string name="shop_tab5">Descargar tarjetas</string>
+    <string name="my_theme">Mis temas</string>
+    <string name="my_animation">Íconos</string>
+    <string name="my_font">Mis fuentes</string>
+    <string name="my_card">Mis tarjetas de felicitación</string>
+    <string name="notice">Recomendar</string>
+    <string name="download_started">Han comenzado a descargar y añadir a la gestor de descargas !</string>
+    <string name="delete_notice">Removido, el contenido descargado se perderá!</string>
+    <string name="delete">Borrar</string>
+    <string name="deleted">Se ha borrado</string>
+    <string name="download_success">Descarga exitosa, instale por favor</string>
+    <string name="download_fail">Descarga fallida</string>
+    <string name="download_stop">Descarga en pausa</string>
+    <string name="res_count">Hay %1$d items</string>
+    <string name="progress_down">Está descargando, espere por favor...</string>
+    <string name="connect_fail">Falló conexión a red</string>
+    <string name="no_connect">No existe conexión!</string>
+    <string name="no_model">Todavía no se han descargado plantillas, desea descargar?</string>
+    <string name="pick_model">La plantilla que te guste!</string>
+    <string name="confirm_install">¿Desea instalar?</string>
+    <string name="install">Instalar</string>
+    <string name="install_charge">%1$s,Instalar?</string>
+    <string name="install_free">%1$s es gratis, instalar?</string>
+    <string name="skin_popu_title">Mostrar previsualización</string>
+    <string name="default_skin">Tema por defecto</string>
+    <string name="default_font">Fuente por defecto</string>
+    <string name="default_animation">Animación por defecto</string>
+    <string name="skin_top3_1">Todo</string>
+    <string name="skin_top3_2">Item</string>
+    <string name="skin_sorry">No hay vista previa</string>
+    <string name="set_skin">Tema configurado como：</string>
+    <string name="set_font">Fuente configurada como：</string>
+    <string name="set_animation">Animación de alerta se ha establecido como：</string>
+    <string name="spopu_bt_dl">Descargar</string>
+    <string name="spopu_bt_finish">Se ha descargado</string>
+    <string name="skin_bt_use">Aplicar</string>
+    <string name="skin_bt_useing">Aplicado</string>
+    <string name="title_animation">Mi animación</string>
+</resources>

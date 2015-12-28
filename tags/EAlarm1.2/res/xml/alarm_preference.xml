@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/set_alarm">
+        <Preference
+            android:key="DialogSetTime"
+            android:title="@string/time"
+        />
+        <Preference
+        android:key="ListRepeat"
+        android:title="@string/repeat"
+    	/>
+    	<Preference
+            android:key="DialogSetDelay"
+            android:title="@string/delay_time"
+        />
+        <EditTextPreference
+        android:key="EditTextAlertInfo"
+        android:title="@string/alert_info"
+        android:dialogTitle="@string/alert_info"
+        />
+        <Preference
+        android:key="RingtoneSelect"
+        android:title="@string/alert_ring"
+    	/>
+    	<CheckBoxPreference
+        android:key="CheckBoxIsRing"
+        android:title="@string/is_ring"
+        />
+        <CheckBoxPreference
+        android:key="CheckBoxIsVibrate"
+        android:title="@string/is_vibrate"
+        />
+    </PreferenceCategory>
+</PreferenceScreen>

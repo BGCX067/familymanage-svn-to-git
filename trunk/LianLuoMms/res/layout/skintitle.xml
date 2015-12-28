@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top" >
+
+        <SkinImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/logo" />
+
+        <SkinTextView
+            android:id="@+id/title_skin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="@string/my_theme"
+            android:textColor="@color/title"
+            style="@style/StyleText" />
+
+        <SkinTextView
+            android:id="@+id/skin_top3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/title"
+            android:layout_marginRight="15dip" />
+    </SkinRelativeLayout>
+
+

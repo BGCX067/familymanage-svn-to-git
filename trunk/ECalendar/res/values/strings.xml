@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pirate calendar</string>
+    <string name="choose_time">Choose time</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="month">-</string>
+    <string name="week">星期</string>
+    <string name="leap_month">闰</string>
+    <string name="delete">Delete</string>
+    <string name="input_content">Input content!</string>
+    <string name="diary_hint">海贼王,我当定了</string>
+    <string name="no_diary">No diary!</string>
+    <string name="store">Store</string>
+    <string name="clear">Clear</string>
+    <string name="send">Send</string>
+    <string name="send_with">Send with</string>
+    <string name="div">-</string>
+    <string name="diarys">All diary</string>
+    <string name="share">Share</string>
+    <string name="about">About</string>
+    <string name="setting">Setting</string>
+    <string name="holiday_color">Holiday color</string>
+    <string name="summary_only">Diary summary only</string>
+    <string name="custom_head">Custom head</string>
+    <string name="share_way">Share with</string>
+    <string name="share_content">I am using an Android software named Pirate Calendar, it is beautiful and convenient, Go download it!</string>
+    <string name="update_log">Thank you very much for using Pirate Calendar! In this version, you can choose your own setting, go make it your style!</string>
+    <string name="author">Author: Exuan</string>
+    <string name="version">Version: </string>
+    <string-array name="action_array">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+    <string-array name="week_array">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>日</item>
+    </string-array>
+    
+    <string-array name="lunar_month_array">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>冬月</item>
+        <item>腊月</item>
+    </string-array>
+    
+    <string-array name="lunar_day_array">
+    	<item>初一</item>
+        <item>初二</item>
+        <item>初三</item>
+        <item>初四</item>
+        <item>初五</item>
+        <item>初六</item>
+        <item>初七</item>
+        <item>初八</item>
+        <item>初九</item>
+        <item>初十</item>
+        <item>十一</item>
+        <item>十二</item>
+        <item>十三</item>
+        <item>十四</item>
+        <item>十五</item>
+        <item>十六</item>
+        <item>十七</item>
+        <item>十八</item>
+        <item>十九</item>
+        <item>二十</item>
+        <item>廿一</item>
+        <item>廿二</item>
+        <item>廿三</item>
+        <item>廿四</item>
+        <item>廿五</item>
+        <item>廿六</item>
+        <item>廿七</item>
+        <item>廿八</item>
+        <item>廿九</item>
+        <item>三十</item>
+    </string-array>
+    
+    <string-array name="lunar_festival_day">
+        <item>0101</item>
+        <item>0115</item>
+        <item>0505</item>
+        <item>0707</item>
+        <item>0815</item>
+        <item>0909</item>
+        <item>1208</item>
+        <item>1223</item>
+    </string-array>
+    
+    <string-array name="lunar_festival_name">
+        <item>春节</item>
+        <item>元宵</item>
+        <item>端午</item>
+        <item>七夕</item>
+        <item>中秋</item>
+        <item>重阳</item>
+        <item>腊八</item>
+        <item>小年</item>
+    </string-array>
+    
+    <string-array name="solar_festival_day">
+        <item>0101</item>
+        <item>0214</item>
+        <item>0308</item>
+        <item>0312</item>
+        <item>0401</item>
+        <item>0501</item>
+        <item>0504</item>
+        <item>0601</item>
+        <item>0701</item>
+        <item>0801</item>
+        <item>0910</item>
+        <item>1001</item>
+        <item>1111</item>
+        <item>1224</item>
+        <item>1225</item>
+    </string-array>
+    
+    <string-array name="solar_festival_name">
+        <item>元旦</item>
+        <item>情人</item>
+        <item>妇女</item>
+        <item>植树</item>
+        <item>愚人</item>
+        <item>劳动</item>
+        <item>青年</item>
+        <item>儿童</item>
+        <item>建党</item>
+        <item>建军</item>
+        <item>教师</item>
+        <item>国庆</item>
+        <item>光棍</item>
+        <item>平安</item>
+        <item>圣诞</item>
+    </string-array>
+    
+    <string-array name="TwoFour_festival_name">
+    	<item>小寒</item>
+    	<item>大寒</item>
+    	<item>立春</item>
+    	<item>雨水</item>
+    	<item>惊蛰</item>
+    	<item>春分</item>
+    	<item>清明</item>
+    	<item>谷雨</item>
+    	<item>立夏</item>
+    	<item>小满</item>
+    	<item>芒种</item>
+    	<item>夏至</item>
+    	<item>小暑</item>
+    	<item>大暑</item>
+    	<item>立秋</item>
+    	<item>处暑</item>
+    	<item>白露</item>
+    	<item>秋分</item>
+    	<item>寒露</item>
+    	<item>霜降</item>
+    	<item>立冬</item>
+    	<item>小雪</item>
+    	<item>大雪</item>
+    	<item>冬至</item>
+    </string-array>
+</resources>

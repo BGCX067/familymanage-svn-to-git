@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.exuan.alarm"
+      android:versionCode="3"
+      android:versionName="1.2">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".EAlarmActivity"
+                  android:label="@string/app_name"
+                  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ESetAlarmActivity"
+                  android:label="@string/set_alarm">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ESettingActivity"
+                  android:label="@string/setting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".EAboutActivity"
+                  android:label="@string/about">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <provider android:name=".AlarmInfoProvider" android:authorities="com.exuan.alarm.alarminfo" android:exported="true"></provider>
+
+		<receiver android:name=".AlarmReceiver"> 
+        </receiver>
+        <receiver android:name=".ResetReceiver"> 
+        	<intent-filter>
+        		<action android:name="android.intent.action.BOOT_COMPLETED"/>
+        		<action android:name="android.intent.action.TIME_SET"/>
+    		</intent-filter>
+        </receiver>
+        <receiver android:name=".InitReceiver" android:enabled="true"> 
+        	<intent-filter>
+        		<action android:name="android.intent.action.PACKAGE_REPLACED"/>
+        		<action android:name="android.intent.action.PACKAGE_CHANGED"/>
+    		<data android:scheme="package"></data>  
+    		</intent-filter>
+        </receiver>
+        <!-- android:theme="@style/trans_back" -->
+        <activity android:name=".EAlertAlarmActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:excludeFromRecents="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+<uses-sdk android:minSdkVersion="4" /> 
+<uses-permission android:name="android.permission.VIBRATE"/>
+<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+<uses-permission android:name="android.permission.DEVICE_POWER"></uses-permission>
+<uses-permission android:name="android.permission.DISABLE_KEYGUARD"></uses-permission>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+</manifest> 

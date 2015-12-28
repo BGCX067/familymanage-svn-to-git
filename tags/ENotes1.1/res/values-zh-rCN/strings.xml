@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">海贼便签</string>
+    <string name="folder_default">海贼日志</string>
+    <string name="set_folder_name">输入文件夹名称</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="input_folder_name">请输入文件夹名!</string>
+    <string name="input_content">请输入内容!</string>
+    <string name="div">-</string>
+    <string name="text_size">字体大小</string>
+    <string name="alarm">提醒</string>
+    <string name="no_alarm">无提醒</string>
+    <string name="delete_folder">删除文件夹</string>
+    <string name="delete_note">删除便签</string>
+    <string name="folder_name_exist">文件夹已存在</string>
+    <string name="delete">删除</string>
+    <string name="move">移动</string>
+    <string name="confirm_delete">删除文件夹及所包含便签?</string>
+    <string name="rename_folder">重命名</string>
+    <string name="sd_export">输出文本</string>
+    <string name="plugin_sd">请插入SD卡</string>
+    <string name="export_failed">输出失败</string>
+    <string name="exporting">正在输出</string>
+    <string name="export_succeed">已输出至SD卡pirate_notes目录</string>
+    <string name="succeed">输出成功</string>
+    <string name="send">发送</string>
+    <string name="send_way">发送方式</string>
+    <string name="set_alarm">设置提醒时间</string>
+    <string name="set">设置</string>
+    <string name="clear">清除</string>
+    <string name="overdue">此时间已过期</string>
+    <string name="select_folder">选择文件夹</string>
+    <string name="share">分享</string>
+    <string name="share_way">分享方式</string>
+    <string name="share_content">我正在使用安卓软件"海贼便签",它是一款既漂亮又方便的便签,你也赶快去下载吧!</string>
+    <string name="about">关于</string>
+    <string name="update_log">感谢大家使用海贼便签!本版本修复文件夹或便签无法删除的BUG</string>
+    <string name="author">作者: 翊轩</string>
+    <string name="version">版本: </string>
+    
+    <string-array name="week_array">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+</resources>

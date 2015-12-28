@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinLinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" 
+  android:id="@+id/TheSplashLayout"
+  android:layout_gravity="center"
+  >
+	<SkinImageView 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:id="@+id/SplashImageView"
+		android:layout_gravity="center"		
+		>
+	</SkinImageView>
+	<!-- 120*200 -->
+	<!-- 280*373 -->
+	<com.haolianluo.swfp.GLSurfaceView
+			android:layout_width="280dip" android:layout_height="373dip"
+			android:id="@+id/play" android:layout_gravity="center"/>
+</SkinLinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg" >
+
+    <SkinFrameLayout
+        android:id="@+id/fl_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <com.haolianluo.swfp.GLSurfaceView
+            android:id="@+id/play"
+            android:layout_width="280dip"
+            android:layout_height="373dip" />
+        
+        <RelativeLayout
+             android:id="@+id/playDraftAndMms"
+             android:layout_width="wrap_content"
+       		 android:layout_height="wrap_content"
+       		 android:visibility="gone" >
+        <ImageView
+            android:id="@+id/playDraftAndMmsImageView"
+            android:layout_width="280dip"
+            android:layout_height="373dip"
+            android:background="@drawable/play_bg" />
+        <Button
+            android:id="@+id/playDraftAndMmsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/play_button"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:id="@+id/playDraftAndMmsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" 
+            android:layout_marginTop="220dip" />
+        </RelativeLayout>
+
+    </SkinFrameLayout>
+
+    <SkinFrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+        <include layout="@layout/edit" />
+    </SkinFrameLayout>
+
+    <!--
+    SkinFrameLayout android:layout_width="fill_parent" 
+		android:layout_gravity="top" android:layout_height="wrap_content"
+		android:id="@+id/rl_title">
+	
+		<include layout="@layout/title_2" />
+	</SkinFrameLayout
+    -->
+
+</SkinFrameLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_back_width">960px</dimen>
+    <dimen name="screen_width">480px</dimen>
+    
+     <!-- list -->
+    <dimen name="list_margin_top">63px</dimen>
+    <dimen name="list_clip_width">39px</dimen>
+    
+    <!-- list clip -->
+    <dimen name="list_clip_item_padding_top">13px</dimen>
+    <dimen name="list_clip_item_padding_bottom">12px</dimen>
+    
+    <!-- list item -->
+    <dimen name="list_item_edit_margin_left">15px</dimen>
+    <dimen name="list_item_edit_button_size">28px</dimen>
+    <dimen name="list_item_edit_left_button_margin_left">15dp</dimen>
+    <dimen name="list_item_edit_center_button_margin">20px</dimen>
+    
+    <dimen name="list_item_detail_margin_top">1px</dimen>
+    <dimen name="list_item_detail_padding_left">10dp</dimen>
+    <dimen name="list_item_detail_padding_right">10dp</dimen>
+    
+    <dimen name="list_item_checkbox_size">36px</dimen>
+    <dimen name="list_item_checkbox_margin_left">4px</dimen>
+    <dimen name="list_item_checkbox_margin_right">6px</dimen>
+    
+    <dimen name="list_item_content_height">86px</dimen>
+    <dimen name="list_item_content_padding_top">5px</dimen>
+    <dimen name="list_item_content_padding_left">28dp</dimen>
+    <dimen name="list_item_content_padding_right">20dp</dimen>
+    <dimen name="list_item_content_padding_bottom">10px</dimen>
+    
+    <dimen name="list_item_text_margin_bottom">10px</dimen>
+    <dimen name="list_item_fav_margin_left">3dp</dimen>
+    <dimen name="list_item_summary_height">25dp</dimen>
+    <dimen name="list_item_summary_linespace">5dp</dimen>
+    <dimen name="list_item_summary_margin_top">32px</dimen>
+    <dimen name="list_item_mask_margin_left">15dp</dimen>
+    <dimen name="list_item_mask_center_button_margin">25dp</dimen>
+    <dimen name="list_item_mask_left_button_margin_left">15dp</dimen>
+    
+    <!-- search -->
+    <dimen name="search_height">43px</dimen>
+    <dimen name="search_padding_left">15dp</dimen>
+    <dimen name="search_padding_top">16px</dimen>
+    <dimen name="search_padding_right">15dp</dimen>
+    <dimen name="search_padding_bottom">4px</dimen>
+    <dimen name="search_edit_padding_left">35dp</dimen>
+    <dimen name="search_delete_size">30px</dimen>
+    <dimen name="search_delete_margin_right">5px</dimen>
+    
+    <!-- scroll view -->
+    <dimen name="scroll_edit_margin_top">80px</dimen>
+    <dimen name="scroll_title_margin_left">10dp</dimen>
+    <dimen name="scroll_title_margin_right">9.3dp</dimen>
+    <dimen name="scroll_title_padding_left">28dp</dimen>
+    <dimen name="scroll_title_padding_right">32dp</dimen>
+    <dimen name="scroll_title_padding_bottom">6.13dp</dimen>
+    <dimen name="scroll_time_margin_top">2.82dp</dimen>
+    <dimen name="scroll_frame_padding_left">28dp</dimen>
+    <dimen name="scroll_frame_padding_right">18dp</dimen>
+    <dimen name="scroll_frame_padding_top">6dp</dimen>
+    <dimen name="scroll_frame_margin_left">10dp</dimen>
+    <dimen name="scroll_frame_margin_right">11dp</dimen>
+    <dimen name="scroll_edit_content_min_height">642px</dimen>
+    <dimen name="scroll_edit_linespace">17dp</dimen>
+    <dimen name="surfaceview_margin_top">13px</dimen>
+    
+    <!-- title bar -->
+    <dimen name="title_bar_height">67px</dimen>
+    <dimen name="title_bar_padding_left">8px</dimen>
+    <dimen name="title_bar_padding_right">8px</dimen>
+    <dimen name="title_bar_padding_top">8px</dimen>
+    <dimen name="title_button_width">68px</dimen>
+    <dimen name="title_button_height">43px</dimen>
+    <dimen name="right_button_margin_left">12px</dimen>
+    
+    <!-- text size -->
+    <dimen name="button_text_size">18px</dimen>
+    <dimen name="time_text_size">14px</dimen>
+    <dimen name="detail_text_size">24px</dimen>
+</resources>

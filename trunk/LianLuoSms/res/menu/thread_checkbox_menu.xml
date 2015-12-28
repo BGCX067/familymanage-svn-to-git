@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- <group android:id="@+id/grout_main"> -->
+		<item android:id="@+id/menu_selectAllMark" android:title="@string/selectAllMark"/>
+		<item android:id="@+id/menu_removeMark" android:title="@string/removeMark"/>
+		<item android:id="@+id/menu_deleteSelectedMark" android:title="@string/deleteSelectedMark"/>
+		<item android:id="@+id/menu_cancel" android:title="@string/back"/>
+	<!--</group>  -->
+</menu>

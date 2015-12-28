@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="User_Layout">
+        <item name="android:paddingLeft">6dip</item>
+        <item name="android:paddingRight">7dip</item>
+        <item name="android:paddingTop">8dip</item>
+    </style>
+    <style name="TextAppearance" parent="android:TextAppearance">
+    </style>
+    
+    <style name="TextAppearance.TextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">2dip</item>
+    </style>
+</resources>

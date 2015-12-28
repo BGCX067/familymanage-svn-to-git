@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pirate Note</string>
+    <string name="folder_default">Journal</string>
+    <string name="set_folder_name">Input folder name</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="input_folder_name">Input folder name!</string>
+    <string name="input_content">Input content!</string>
+    <string name="div">-</string>
+    <string name="text_size">Text size</string>
+    <string name="alarm">Alarm</string>
+    <string name="no_alarm">No alarm</string>
+    <string name="delete_folder">Delete folder</string>
+    <string name="delete_note">Delete note</string>
+    <string name="folder_name_exist">Existed folder</string>
+    <string name="delete">Delete</string>
+    <string name="move">Move</string>
+    <string name="confirm_delete">Delete folders and contained notes?</string>
+    <string name="rename_folder">Rename</string>
+    <string name="sd_export">Export text</string>
+    <string name="plugin_sd">Please plug in SD card</string>
+    <string name="export_failed">Exporting failed</string>
+    <string name="exporting">Exporting</string>
+    <string name="export_succeed">Exported to folder pirate_notes on SD card</string>
+    <string name="succeed">Exporting succeed</string>
+    <string name="send">Send</string>
+    <string name="send_way">Send with</string>
+    <string name="set_alarm">Set alarm time</string>
+    <string name="set">Set</string>
+    <string name="clear">Clear</string>
+    <string name="overdue">Overdue time</string>
+    <string name="select_folder">Select folder</string>
+    <string name="share">Share</string>
+    <string name="share_way">Share with</string>
+    <string name="share_content">I am using an Android software named Pirate Note, it is beautiful and convenient, Go download it!</string>
+    <string name="about">About</string>
+    <string name="update_log">Thank you very much for using Pirate Note! In this version, I fix the bug that folders or notes can not be deleted</string>
+    <string name="author">Author: Exuan</string>
+    <string name="version">Version: </string>
+    
+    <string-array name="week_array">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+</resources>

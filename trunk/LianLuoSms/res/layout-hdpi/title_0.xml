@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="fill_parent"
+    android:layout_height="46dip"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/top" >
+
+    <SkinImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/logo" />
+
+    <SkinTextView
+        android:id="@+id/tv_appname"
+        style="@style/StyleText"
+        android:textColor="@color/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="@string/app_name" />
+
+</SkinRelativeLayout>

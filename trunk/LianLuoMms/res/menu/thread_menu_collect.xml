@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--<item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/menu_search_xml"
+        android:title="@string/search"/>
+
+    --><item
+        android:id="@+id/menu_mark"
+        android:icon="@drawable/menu_check_xml"
+        android:title="@string/mark"/>
+    
+    <item
+        android:id="@+id/menu_collect"
+        android:icon="@drawable/menu_collect_xml"
+        android:title="@string/collection"/>
+
+ 	<item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/menu_setting_xml"
+        android:title="@string/setting"/>
+
+ 	<item
+        android:id="@+id/menu_exit"
+        android:icon="@drawable/menu_exit_xml"
+        android:title="@string/exit"/>
+
+</menu>

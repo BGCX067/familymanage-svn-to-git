@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_layout_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <SkinRelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:background="@drawable/top" >
+
+        <SkinTextView
+            android:id="@+id/tv_appname"
+            style="@style/StyleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setting"
+            android:textColor="@color/title" />
+    </SkinRelativeLayout>
+
+    <!-- 1、消息栏提醒开关 2、动画短信提醒开关 3、短信震动提醒开关 4、快捷短信提醒开关 5、资源库 6、检查更新7、分享 -->
+    <!-- 消息栏提醒开关 -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="18dip"
+                android:layout_marginRight="18dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/set_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <SkinRelativeLayout
+                    android:id="@+id/rl_setting1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <SkinTextView
+                        android:id="@+id/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/setting1"
+                        android:textColor="@color/defcolor"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bt_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/on" />
+                </SkinRelativeLayout>
+
+                <!-- 动画短信提醒开关 -->
+
+                <ImageView
+                    android:id="@+id/im_s2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/set_line"
+                    android:visibility="gone" />
+
+                <SkinRelativeLayout
+                    android:id="@+id/rl_setting2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <SkinTextView
+                        android:id="@+id/flash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/setting2"
+                        android:textColor="@color/defcolor"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bt_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/on" />
+                </SkinRelativeLayout>
+
+                <!-- 短信震动提醒开关 -->
+
+                <ImageView
+                    android:id="@+id/im_s3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/set_line"
+                    android:visibility="gone"  />
+
+                <SkinRelativeLayout
+                    android:id="@+id/rl_setting3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone"  >
+
+                    <Button
+                        android:id="@+id/bt_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/on" />
+
+                    <SkinTextView
+                        android:id="@+id/sms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toLeftOf="@id/bt_3"
+                        android:text="@string/setting3"
+                        android:textColor="@color/defcolor"
+                        android:textSize="16sp" />
+                </SkinRelativeLayout>
+                <!-- 快捷短信提醒开关 -->
+
+                <ImageView
+                    android:id="@+id/im_s4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/set_line" />
+
+                <SkinRelativeLayout
+                    android:id="@+id/rl_setting4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" >
+
+                    <SkinTextView
+                        android:id="@+id/shortcut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/setting4"
+                        android:textColor="@color/defcolor"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bt_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/on" />
+                </SkinRelativeLayout>
+                <!-- 账户管理 -->
+
+                <ImageView
+                    android:id="@+id/im_s8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/set_line" />
+
+                <SkinRelativeLayout
+                    android:id="@+id/rl_setting8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" 
+                    android:background="@anim/more_click"
+                    >
+
+                    <SkinTextView
+                        android:id="@+id/account_manage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/account_manage"
+                        android:textColor="@color/defcolor"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bt_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:visibility="gone" />
+                </SkinRelativeLayout>
+
+                <!-- 检查更新 -->
+
+                <ImageView
+                    android:id="@+id/im_s6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/set_line" />
+
+                <SkinRelativeLayout
+                    android:id="@+id/rl_setting6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" 
+                    android:background="@anim/more_click"
+                    >
+
+                    <SkinTextView
+                        android:id="@+id/updata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/setting6"
+                        android:textColor="@color/defcolor"
+                        android:textSize="16sp" />
+
+                    <SkinButton
+                        android:id="@+id/bt_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:visibility="gone" />
+                </SkinRelativeLayout>
+                <!-- 分享 -->
+
+                <ImageView
+                    android:id="@+id/im_s7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/set_line" 
+                    
+                    />
+
+                <SkinRelativeLayout
+                    android:id="@+id/rl_setting7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" 
+                    android:background="@anim/more_click"
+                    >
+
+                    <SkinTextView
+                        android:id="@+id/share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/setting7"
+                        android:textColor="@color/defcolor"
+                        android:textSize="16sp" />
+
+                    <SkinButton
+                        android:id="@+id/bt_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:visibility="gone" />
+                </SkinRelativeLayout>
+
+                <!-- 关于 -->
+
+                <ImageView
+                    android:id="@+id/im_s9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/set_line" />
+
+                <SkinRelativeLayout
+                    android:id="@+id/rl_setting9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" 
+                    android:background="@anim/more_click"
+                    >
+
+                    <SkinTextView
+                        android:id="@+id/about"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/about"
+                        android:textColor="@color/defcolor"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bt_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:visibility="gone" />
+                </SkinRelativeLayout>
+                <!-- 我说两句 -->
+
+                <ImageView
+                    android:id="@+id/im_s10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/set_line" />
+
+                <SkinRelativeLayout
+                    android:id="@+id/rl_setting10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" 
+                    android:background="@anim/more_click"
+                    >
+
+                    <SkinTextView
+                        android:id="@+id/imtalk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/imtalk"
+                        android:textColor="@color/defcolor"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bt_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:visibility="gone" />
+                </SkinRelativeLayout>
+                <ImageView
+                    android:id="@+id/im_s11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/set_line" />
+
+                <SkinRelativeLayout
+                    android:id="@+id/rl_setting11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal" 
+                    android:background="@anim/more_click"
+                    >
+
+                    <SkinTextView
+                        android:id="@+id/about"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/backup_restore"
+                        android:textColor="@color/defcolor"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bt_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:visibility="gone" />
+                </SkinRelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text=" " />
+        </LinearLayout>
+    </ScrollView>
+
+</SkinLinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="9dip" >
+
+    <SkinRelativeLayout
+        android:id="@+id/rl_date"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:visibility="gone" >
+
+        <SkinTextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/talk_body_color"
+            android:visibility="gone" />
+    </SkinRelativeLayout>
+    <!-- 会话靠左测 -->
+
+    <SkinRelativeLayout
+        android:id="@+id/left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="50dip"
+        android:background="@drawable/talklayout_left_list_xml"
+        android:minHeight="53dip"
+        android:minWidth="226dip" >
+
+        <SkinTextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:minHeight="40dip"
+            android:textColor="@color/talk_body_color" />
+
+        <SkinTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/body"
+            android:layout_marginRight="5dip"
+            android:textColor="@color/talk_body_color" />
+
+        <SkinTextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/body"
+            android:layout_marginLeft="5dip"
+            android:ellipsize="marquee"
+            android:maxWidth="165dip"
+            android:singleLine="true"
+            android:textColor="@color/talk_body_color"
+            android:visibility="gone" />
+    </SkinRelativeLayout>
+
+    <!-- 会话靠右侧 -->
+
+    <SkinRelativeLayout
+        android:id="@+id/right"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/talklayout_right_list_xml"
+        android:minHeight="53dip"
+        android:minWidth="226dip" >
+
+        <SkinTextView
+            android:id="@+id/bodyRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:minHeight="40dip"
+            android:textColor="@color/talk_body_color" />
+
+        <SkinTextView
+            android:id="@+id/timeRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/bodyRight"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/talk_body_color" />
+
+        <SkinTextView
+            android:id="@+id/addressRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/bodyRight"
+            android:layout_marginRight="5dip"
+            android:ellipsize="marquee"
+            android:maxWidth="165dip"
+            android:singleLine="true"
+            android:textColor="@color/talk_body_color"
+            android:visibility="gone" />
+    </SkinRelativeLayout>
+
+</RelativeLayout>

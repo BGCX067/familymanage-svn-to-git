@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    
+    <string name="app_name">便签</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_notes">便签</string>
+    
+    <string name="title">便签记事本</string>
+    
+<string name="send_via">发送方式</string>
+    <string name="div">－</string>
+    <string name="input_content">请输入内容!</string>
+<string name="search">搜索</string>
+    <string name="notes_empty">无便签</string>
+<string name="modify">编辑</string>
+<string name="back">返回</string>
+<string name="cancel">取消</string>
+<string name="year">年</string>
+    <string name="years">年</string>
+    <string name="month">月</string>
+    <string name="months">月</string>
+    <string name="day">天</string>
+    <string name="days">天</string>
+    <string name="hour">小时</string>
+    <string name="hours">小时</string>
+    <string name="minutes">分钟</string>
+    <string name="minute">分钟</string>
+    <string name="ago">%1$d%2$s前</string>
+</resources>

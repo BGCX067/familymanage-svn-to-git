@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout android:layout_width="fill_parent" android:layout_alignParentTop="true"
+		android:layout_height="46dip" android:id="@+id/rl_title" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:background="@drawable/top" android:layout_alignWithParentIfMissing="true">
+	<SkinImageView android:layout_width="32dip" android:layout_marginRight="5dip"
+			android:layout_height="32dip" android:id="@+id/iv_icon" 
+			android:background="@drawable/logo" android:layout_alignParentLeft="true"
+			android:layout_marginLeft="5dip" android:layout_centerVertical="true" />
+	<SkinTextView android:layout_width="wrap_content"  android:textColor="@color/title" style="@style/StyleText"
+			android:layout_height="wrap_content" android:id="@+id/tv_appname"
+			android:text="@string/app_name" android:layout_toRightOf="@id/iv_icon" 
+			android:layout_centerVertical="true" />
+	<FrameLayout 
+	    android:layout_width="45dip"
+		android:layout_height="32dip"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="5dip"
+		android:layout_centerVertical="true"
+	    >
+	    <SkinButton android:layout_width="32dip"
+				android:layout_height="32dip" 
+				android:id="@+id/bt_shortcut"
+				android:background="@drawable/bt_shortcut_key_xml" />
+	    
+	    <FrameLayout 
+	        android:id="@+id/thread_new_tem_layout"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right|top"
+			android:layout_marginLeft="8dip"
+			android:background="@drawable/new_count"
+		    > 
+			<TextView
+			    android:id="@+id/thread_new_tem_count"
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/white"
+				android:layout_gravity="center"
+				android:layout_marginBottom="2dip"
+				android:text="12"
+				android:textSize="10sp"
+			    />    
+		   </FrameLayout> 
+    </FrameLayout>
+</SkinRelativeLayout>

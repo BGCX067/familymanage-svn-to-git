@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">海贼通话记录</string>
+    <string name="date_div">-</string>
+    <string name="time_div">:</string>
+    <string name="all">所有电话</string>
+    <string name="income">已接电话</string>
+    <string name="out">已拨电话</string>
+    <string name="missed">未接电话</string>
+    <string name="duration">持续</string>
+    <string name="unknown">未知</string>
+    <string name="delete">删除</string>
+    <string name="delete_confirm">确认删除</string>
+    <string name="delete_info">是否删除本项所有记录?</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="call">拨打电话</string>
+    <string name="msg">发送短信</string>
+    <string name="store">保存到联系人</string>
+    <string name="view">查看联系人</string>
+    <string name="delete_record">删除记录</string>
+    <string name="share">分享</string>
+    <string name="about">关于</string>
+    <string name="share_way">分享方式</string>
+    <string name="share_content">我正在使用安卓软件"海贼通话记录",它是一款既漂亮又方便的通话记录,你也赶快去下载吧!</string>
+    <string name="update_log">感谢大家使用海贼通话记录!本软件对通话记录进行了清晰的分类,方便查看.还可对单条记录和整个号码的记录进行删除.更有信息和电话的快捷键,使您更易使用!</string>
+    <string name="author">作者: 翊轩</string>
+    <string name="version">版本: </string>
+    <string-array name="week_array">
+    	<item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="store_array">
+    	<item>新建联系人</item>
+        <item>已有联系人</item>
+    </string-array>
+    <string-array name="delete_array">
+    	<item>本条记录</item>
+        <item>本号码记录</item>
+    </string-array>
+</resources>

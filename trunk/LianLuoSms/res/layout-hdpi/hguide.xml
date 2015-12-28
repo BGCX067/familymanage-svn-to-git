@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <com.haolianluo.sms2.model.HMyScrollLayout    
+	  xmlns:android="http://schemas.android.com/apk/res/android"    
+	  android:id="@+id/ScrollLayout"    
+	  android:layout_width="fill_parent"    
+	  android:layout_height="fill_parent">    
+  
+ 	  <FrameLayout    
+	  android:background="@drawable/yd1"    
+	  android:layout_width="fill_parent"    
+	  android:layout_height="fill_parent">
+	  </FrameLayout>   
+      
+	  <FrameLayout    
+	  android:background="@drawable/yd2"    
+	  android:layout_width="fill_parent"    
+	  android:layout_height="fill_parent">
+	  </FrameLayout>    
+	      
+	  <FrameLayout     
+	  android:background="@drawable/yd3"     
+	  android:layout_width="fill_parent"    
+	  android:layout_height="fill_parent">    
+	  </FrameLayout> 
+	  
+	</com.haolianluo.sms2.model.HMyScrollLayout> 
+
+</RelativeLayout>
+

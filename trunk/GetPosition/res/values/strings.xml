@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GetPosition!</string>
+    <string name="app_name">GetPosition</string>
+<string name="UserName">UserName</string>
+<string name="SetUserName">Please Input User Names :</string>
+<string name="SetUserPwd">Please Input User Password :</string>
+<string name="Login_In">Login In</string>
+<string name="Login_Out">Login Out</string>
+<string name="Login_UserName_Error">The user name does not exist, login error!</string>
+<string name="Login_Pwd_Error">The user password was error, login error! Please relogin again!</string>
+<string name="Login_Processing">Log in was progressing, please wait...</string>
+<string name="Login_Error">Login failed, Please check the network!</string>
+<string name="Warning">Warning!</string>
+<string name="Confirm">Confirm!</string>
+<string name="Login">User login</string>
+<string name="Cancel">Cancel</string>
+</resources>

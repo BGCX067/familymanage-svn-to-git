@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<!-- thread界面写信息按钮  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">   
+    <item    
+        android:state_pressed="false"    
+        android:drawable="@drawable/editsms" />   
+    <item    
+        android:state_pressed="true"    
+        android:drawable="@drawable/editsms_on" />   
+    <item    
+        android:drawable="@drawable/editsms" />   
+</selector>   

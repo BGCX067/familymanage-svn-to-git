@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="verifyr_message">验证码已经通过短信的形式发送至您的手机,请输入验证码完成注册</string>
+    <!-- <string name="download_charge">%1$s,是否安装?</string> -->
+    <string name="qq">腾讯应用中心</string>
+    <string name="exit">退出</string>
+    <string name="loading_name">Hi.messenger</string>
+    <string name="loading_version">V 2.1</string>
+    <string name="loading_company">北京数字天域科技有限责任公司</string>
+    <string name="res_lib_new">模版商店</string>
+    
+    <string name="normal_update_new">发现新版本, 是否更新？</string>
+    <string name="force_update_first">
+        当前版本过旧,可能会影响您的\n
+        使用,建议立即更新!(如不更新\n
+        会造成商店等功能无法使用）
+        </string>
+    <string name="force_update_s">
+        当前版本过旧,会影响您的使用,\n
+        不更新无法继续使用,请立即更新!</string>
+    <string name="version_toast">当前版本过旧,该功能暂时无法使用,请先进行更新!</string>   
+    
+    <string name="normal_update_content">发现新版本, 请点击进行更新</string>
+    <string name="skin_sometime_free">限免</string>
+    
+    <string name="skin_desc">模版说明</string>
+    <string name="show_date">发布日期</string>
+    <string name="searchnew">联系人姓名/电话号码/信息内容</string>
+    <string name="searchContact">联系人姓名/电话号码</string>
+    <string name="skin_changing">模板切换中</string>
+    <string name="skin_changed">模板使用成功</string>
+    <string name="skin_apply">使用</string>
+    <string name="skin_applying">使用中</string>
+    <string name="putInNumaber">请输入您的电话号码</string>
+    <string name="putInProblem1">请输入您的反馈内容</string>
+    <string name="SaySomething">您要跟我们说些什么?</string>
+    <string-array name="selectReadSmsType">
+        <item>动态阅读界面</item>
+        <item>传统阅读界面</item>
+    </string-array>
+    <string name="back">返回</string>
+    <string name="res_check">查看</string>
+    <string name="collectSuccess">收藏成功</string>
+    <string name="seeMms">点击查看彩信</string>
+    <string name="seeDraft">点击查看草稿</string>
+    <string name="deleteSmsOk">信息已删除</string>
+    <string name="celCollect">选中信息取消收藏?</string>
+    <string name="copyok">复制成功</string>
+    <string name="nochoiceContacts">没有选择联系人</string>
+    <string name="nomarksms">没有标记任何信息</string>
+    <string name="plugsd">请插入SD卡</string>
+    <string name="select_all">全选</string>
+    <string name="cancel_selected">取消选中</string>
+    <string name="delete_selected">删除选中</string>
+    <string name="deleting">删除中</string>
+    <string name="skin_deleted">模板已删除</string>
+    <string name="delete_skin">删除选中模板?</string>
+    <string name="select_empty">无选中模板</string>
+</resources>

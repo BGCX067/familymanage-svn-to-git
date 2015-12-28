@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/add_alarm_button"
+    android:id="@+id/linearlayout_add_alarm"
+    android:gravity="center"
+    >
+    	<ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/alarm"
+        >
+        </ImageView>
+    	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/add_alarm"
+	    android:textColor="#fff"
+	    android:textSize="16sp"
+	    android:textStyle="bold"
+	    />
+    </LinearLayout>
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:drawable/divider_horizontal_dark"
+    />
+    <ListView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listview_alarm_info"
+    >
+    </ListView>
+    
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/no_alarm"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/textview_no_alarm"
+    />
+    
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">海贼壁纸</string>
+    <string name="success">设置壁纸成功!</string>
+    <string name="fail">设置壁纸失败!</string>
+</resources>

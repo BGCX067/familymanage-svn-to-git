@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/res_title"
+        layout="@layout/res_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/scroll" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- icon, name, 安装 -->
+
+            <LinearLayout
+                android:id="@+id/res_detail_show_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/res_detail_icon"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_weight="0"
+                    android:background="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/res_detail_name"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:textColor="@color/re_de_text"
+                        android:textSize="16sp" />
+
+                    <RatingBar
+                        android:id="@+id/res_detail_starlevel"
+                        style="@style/roomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dip"
+                        android:isIndicator="true"
+                        android:numStars="5" />
+
+                    <TextView
+                        android:id="@+id/res_detail_chargestatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/re_de_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/res_detail_install"
+                        android:layout_width="99dip"
+                        android:layout_height="40dip"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/res_installed"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/res_detail_downtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="5dip"
+                        android:textColor="@color/re_de_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 进度条 -->
+
+            <LinearLayout
+                android:id="@+id/res_detail_progress_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/res_detail_other_line_progress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginBottom="5dip"
+                    android:background="@drawable/res_2_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:id="@+id/res_detail_progressbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/res_pro_back" >
+                        </ImageView>
+
+                        <ProgressBar
+                            android:id="@+id/res_detail_progressbar_new"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="2dp"
+                            android:background="#00000000"
+                            android:progressDrawable="@drawable/progress_style" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/res_detail_progresspercent"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center"
+                        android:textColor="@color/re_de_text" />
+
+                    <ImageView
+                        android:id="@+id/res_detail_start_pause_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/res_de_cancel"
+                        android:padding="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 说明 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/res_detail_vbg" >
+
+                <ImageView
+                    android:id="@+id/res_detail_other_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginBottom="2dip"
+                    android:background="@drawable/res_2_line" />
+
+                <TextView
+                    android:id="@+id/res_detail_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/res_detail_other_line"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/skin_desc"
+                    android:textColor="@color/re_de_text" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@id/res_detail_other"
+                    android:layout_marginTop="2dip"
+                    android:background="@drawable/res_2_line" />
+            </RelativeLayout>
+
+            <!-- 模板说明 -->
+
+            <LinearLayout
+                android:id="@+id/res_detail_desc_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/res_detail_showdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:textColor="@color/re_de_text" />
+
+                <TextView
+                    android:id="@+id/res_detail_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:textColor="@color/re_de_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/res_detail_vbg"
+                android:orientation="vertical" >
+
+                <!-- 预览的三张图片 -->
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/res_2_line" />
+
+                <LinearLayout
+                    android:id="@+id/res_detail_waitbarlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+                     <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/shop_loading" 
+                        android:layout_marginTop="10dip"
+                        />
+<!--                 <ProgressBar 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyleSmall"
+                    />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/loading"
+                    android:textColor="@color/re_de_text"
+                    /> -->
+                </LinearLayout>
+                
+                <Gallery
+                    android:id="@+id/gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:spacing="10dip" 
+                    android:visibility="gone" 
+                    />
+
+                <LinearLayout
+                    android:id="@+id/res_detail_radio_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dip"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone" 
+                    >
+
+                    <ImageView
+                        android:id="@+id/res_detail_pre_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/radio_on" />
+
+                    <ImageView
+                        android:id="@+id/res_detail_pre_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:src="@drawable/radio_on" />
+
+                    <ImageView
+                        android:id="@+id/res_detail_pre_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:src="@drawable/radio_on" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 用户还浏览了一下模板 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/res_detail_vbg" >
+
+                <ImageView
+                    android:id="@+id/res_detail_other_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginBottom="2dip"
+                    android:background="@drawable/res_2_line" />
+
+                <TextView
+                    android:id="@+id/res_detail_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/res_detail_other_line"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/user_view_history"
+                    android:textColor="@color/re_de_text" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@id/res_detail_other"
+                    android:layout_marginTop="2dip"
+                    android:background="@drawable/res_2_line" />
+            </RelativeLayout>
+            <!-- 用户还浏览了一下模板 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/res_detail_othershow_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/res_detail_othericon"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:background="@drawable/logo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/res_detail_othername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/loading"
+                            android:textColor="@color/re_de_text"
+                            android:textSize="16sp" />
+
+                        <RatingBar
+                            android:id="@+id/res_detail_otherstarlevel"
+                            style="@style/roomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dip"
+                            android:isIndicator="true"
+                            android:numStars="5" />
+
+                        <TextView
+                            android:id="@+id/res_detail_otherchargestatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$2.0"
+                            android:textColor="@color/re_de_text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/res_detail_othershow_rigth_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/res_detail_right_othericon"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:background="@drawable/logo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/res_detail_right_othername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/loading"
+                            android:textColor="@color/re_de_text"
+                            android:textSize="16sp" />
+
+                        <RatingBar
+                            android:id="@+id/res_detail_rightstarlevel"
+                            style="@style/roomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dip"
+                            android:isIndicator="true"
+                            android:numStars="5" />
+
+                        <TextView
+                            android:id="@+id/res_detail_rightchargestatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$2.0"
+                            android:textColor="@color/re_de_text" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+>
+	<ImageView
+	android:layout_width="100dp"
+	android:layout_height="150dp"
+	android:src="@drawable/chaoba"
+	android:scaleType="fitXY">
+	</ImageView>
+	<LinearLayout
+	android:layout_width="wrap_content"
+	android:layout_height="150dp"
+	android:id="@+id/linearlayout_date"
+	android:orientation="vertical"
+	android:gravity="bottom"
+	>
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:text="111"
+		android:id="@+id/textview_day_week">
+		</TextView>
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:text="111"
+		android:id="@+id/textview_solar_time"
+		>
+		</TextView>
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:text="111"
+		android:id="@+id/textview_lunar_time"
+		>
+		</TextView>
+	</LinearLayout>
+</LinearLayout>

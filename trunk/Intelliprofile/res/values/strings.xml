@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ContextAwareActivity!</string>
+    <string name="app_name">Intelligent Profile</string>
+    <string name="scan_bt">Scan BT</string>
+    <string name="scan_wlan">Scan WLAN</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="signal_strength">Signal Strength</string>
+    <string name="store">Store</string>
+    <string name="cancel">Cancel</string>
+    <string name="setting">Setting</string>
+    <string name="about">About</string>
+    <string name="ok">OK</string>
+    <string name="scanning">It is scanning...</string>
+    <string name="has_started">Service was enabled</string>
+    <string name="has_stopped">Service was disabled</string>
+    <string name="minute">Minute</string>
+    <string name="scan_interval">Set the interval of scan time</string>
+    <string name="wlan">WLAN</string>
+    <string name="turn_on_wlan">Enable WLAN?</string>
+    <string name="turn_off_wlan">Disable WLAN?</string>
+    <string name="contact_none">Contacts is empty</string>
+    <string name="remote_control">Remote Message Control</string>
+    <string name="forward_incoming_call">Forward Incoming Call</string>
+    <string name="enable_forward_call">Enable Format: forwardtoxxxxxx:phone number</string>
+    <string name="disable_forward_call">Disable Format: forwardtoxxxxxx</string>
+    <string name="first_key_forward_call">forwardto</string>   
+    <string name="set_forward_call">Set</string>
+    <string name="reset">Reset</string>     
+    <string name="forward_SMS">Forward SMS</string>
+    <string name="enable_forward_SMS">Enable Format: sendtoxxxxxx:phone number</string>
+    <string name="disable_forward_SMS">Disable Format: sendtoxxxxxx</string>
+    <string name="first_key_forward_SMS">sendto</string>        
+    <string name="set_forward_SMS">Set</string>
+    <string name="lock_unlock">Lock / Unlock Screen</string>
+    <string name="lock_format">Lock Format: LOCK</string>
+    <string name="unlock_format">Unlock Format: UNLOCK</string>
+    <string name="SIMCardNotification">Send SIM Card Changed Notification</string>
+    <string name="Set_Notification_Number">Set Number</string>  
+    <string name="set_number_title">Input Phone Number</string>    
+    <string name="Set_receiver_Number_message">Please input phone number to receive notification SMS when SIM card is changed</string>    
+    <string name="set_forward_call_key_words">Please set key words for incoming call forward (forwardtoxxxxxx)</string>
+    <string name="set_forward_call_title">Set key words to forward call</string>    
+    <string name="set_forward_sms_title">Set key words to forward SMS</string>
+    <string name="set_forward_sms_key_words">Please set key words for SMS forward (sendtoxxxxxx)</string>    
+    
+    <string name="reset_forward_call_ok">Reset the key words of forward call to empty successfully</string>    
+    <string name="reset_forward_sms_ok">Reset the key words of forward SM to empty successfully</string>    
+    <string name="reset_notification_number_ok">Reset the receiver number to empty successfully</string>    
+    <string name="sim_card_changed_notification">Warning!!! please kindly be noted that SIM card has been switched to another in your mobile phone, maybe your phone was stolen or lost, please take action to protect your private data.</string>    
+    <string name="succeed_to_set_nofication_receiver">Succeed to set notification receiver!</string>
+    <string name="succeed_to_set_forward_call">The key words of call forward is set successfully !</string>
+    <string name="succeed_to_set_forward_sms">The key words of SMS forward is set successfully!</string>
+   
+    <array name="profile">
+        <item>Standard</item>
+        <item>Silent</item>
+        <item>Vibrate</item>
+    </array>
+    
+    <array name="forward">
+        <item>Busy</item>
+        <item>Dead Number</item>
+        <item>Power Off</item>
+        <item>Out Of Service</item>
+    </array>
+    
+    <array name="strength">
+        <item>Strong</item>
+        <item>Weak</item>
+    </array>
+    
+    <array name="select_number">
+        <item>User Input</item>
+        <item>From Contacts</item>
+    </array>
+    
+    <string name="select_profile">Select Profile</string>
+	<string name="device_name">Device Name</string>
+	<string name="device_address">Device Address</string>
+	<string name="sensitivity">Sensitivity</string>
+	<string name="set_profile">Set Profile</string>
+	<string name="success">Succeed to set profile!</string>
+	<string name="error">Fail to set profile!</string>
+	<string name="existing_bt">Selected BlueTooth Devices</string>
+	<string name="nearby_bt">Nearby BlueTooth</string>
+	<string name="existing_wlan">Selected WLANs</string>
+	<string name="nearby_wlan">Nearby WLAN</string>
+	<string name="config_enable">Configuration enabled</string>
+	<string name="config_disable">Configuration disabled</string>
+	<string name="delete_config">Delete</string>
+	<string name="clear_bt">Empty BT</string>
+	<string name="clear_wlan">Empty WLAN</string>
+	<string name="scan_wlan_failed">Failed to scan WLAN</string>
+	<string name="fail_to_scan_BT">Fail to scan Bluetooth devices due to Bluetooth is not enabled </string>
+ 	<string name="fail_to_scan_WLAN">Fail to scan WLAN due to WLAN is not enabled</string>	
+	<string name="select_forward">Select Forward Type</string>
+	<string name="select_block_number">Select Rejected Number</string>
+  <string name="turn_off_bt">Please confirm whether Disable Bluetooth?</string>	
+  <string name="diable_bt">Diable Bluetooth</string>	
+</resources>

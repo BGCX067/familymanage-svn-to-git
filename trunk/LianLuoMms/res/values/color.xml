@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="res_disn">#595856</color>
+	<color name="defcolor">#000000</color>
+    <color name="skintitle">#000000</color>
+    <color name="res_free">#019501</color>
+    <color name="res_pay">#fdaa02</color>
+    <color name="res_choice">#3394e1</color>
+    <color name="res_def">#a2a2a2</color>
+    <color name="res_dl">#00aacb</color>
+    <color name="res_ins">#00aacb</color>
+    <color name="res_detail_vbg">#DCDCDC</color>
+    <color name="dg_title">#ffffff</color>     <!-- 短信提醒框：title-->
+    <!-- <短信列表 色值> id  -->
+    <color name="sms">#341d00</color>         <!--  短信列表：“信息”，“收藏”-->
+	<color name="title">#ffffff</color>        <!--  短信列表：top_title左上角  “联络短信”-->
+	<color name="t_name">#323333</color>       <!--  短信列表：列表联系人-->
+	<color name="t_body">#717272</color>       <!--  短信列表：列表内容-->
+	<color name="t_time">#888888</color>       <!--  短信列表：列表时间-->
+	<color name="t_editsms">#ffffff</color>    <!--  短信列表：bottom_title “撰写”-->
+	
+	 <!-- <对话 色值>  id  -->
+	<color name="talk_inputbody_color">#676767</color>   <!-- 对话界面：编辑框内默认文字-->
+	<color name="talk_body_color">#0f0f0f</color>        <!-- 对话界面：编辑框内输入的文字-->
+	<color name="talk_send_color">#ffffff</color>        <!-- 对话界面：底 “发送”-->
+	<color name="talk_list_body">#0f0f0f</color>         <!-- 对话界面：对话内容-->
+	<color name="talk_list_time">#ffffff</color>         <!-- 对话界面：对话时间-->
+	<color name="talk_edit_count">#ffffff</color>        <!-- 对话界面：编辑框个数文字-->
+	
+	<!-- <新建信息 色值>：历史记录-->
+	<color name="editsms_color">#3b3b3b</color>           <!-- 撰写界面：历史记录-->
+  
+	<!-- 资源库界面 色值-->
+	<color name="res_menu_color">#7b7b7b</color>          <!-- 资源库界面：bottom菜单颜色-->
+	
+	<!-- 短信提醒框-->
+	<color name="dg_name_color">#000000</color>          <!-- 短信提醒框：名字-->
+	<color name="dg_body_color">#000000</color>          <!-- 短信提醒框：内容-->
+	<color name="dg_time_color">#000000</color>          <!-- 短信提醒框：时间-->
+	<color name="dg_input_color">#000000</color>          <!-- 短信提醒框：输入文字-->
+	<color name="dg_call_color">#000000</color>          <!-- 短信提醒框：回复按钮 色值-->
+	
+	<color name="re_de_text">#696969</color>          <!-- 模板详情页 文字 色值-->
+	<color name="re_de_desc">#3794e4</color>          <!-- 模板详情页 说明 色值-->
+	<color name="nothing">#00000000</color>
+	
+	<!-- 添加通讯录 -->
+	<color name="contact_search">#4a8a8c</color>          <!-- 添加通讯录：搜索-->
+</resources>
+
+

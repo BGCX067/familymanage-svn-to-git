@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/talk_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <SkinRelativeLayout
+        android:id="@+id/talk_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:background="@drawable/top" >
+
+        <FrameLayout
+            android:id="@+id/bt_shortcut_layout"
+            android:layout_width="45dip"
+            android:layout_height="32dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip" >
+
+            <SkinButton
+                android:id="@+id/bt_shortcut_key"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:background="@drawable/bt_shortcut_key_xml"
+                android:textColor="@color/defcolor" />
+
+            <FrameLayout
+                android:id="@+id/talk_new_tem_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/new_count" >
+
+                <TextView
+                    android:id="@+id/talk_new_tem_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dip"
+                    android:text="12"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <SkinButton
+            android:id="@+id/bt_call"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:layout_toLeftOf="@id/bt_shortcut_layout"
+            android:background="@drawable/bt_chage_readsms_falsh_xml"
+            android:textColor="@color/defcolor" />
+
+        <SkinImageView
+            android:id="@+id/iv_head"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip" />
+
+        <SkinTextView
+            android:id="@+id/tv_name"
+            style="@style/StyleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@id/iv_head"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:textColor="@color/title" />
+
+        <SkinTextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/title" />
+    </SkinRelativeLayout>
+
+    <SkinRelativeLayout
+        android:id="@+id/recipients_subject_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top"
+        android:visibility="gone" >
+
+        <SkinButton
+            android:id="@+id/bt_add"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/bt_top_add_contact_xml"
+            android:textColor="@color/defcolor"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/recipients_subject_linear_X"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dip"
+            android:layout_toLeftOf="@id/bt_add"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip" >
+
+            <ViewStub
+                android:id="@+id/recipients_editor_stub"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/recipients_editor" />
+
+            <EditText
+                android:id="@+id/subject"
+                style="@style/et_input_box_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoText="true"
+                android:capitalize="sentences"
+                android:hint="@string/subject_hint"
+                android:maxLength="40"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </SkinRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mid_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbarThumbVertical="@drawable/scroll" >
+
+            <SkinLinearLayout
+                android:id="@+id/mid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <SkinLinearLayout
+                    android:id="@+id/topGrid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dip"
+                    android:orientation="vertical" >
+                </SkinLinearLayout>
+
+                <SkinImageView
+                    android:id="@+id/linkmanImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dip"
+                    android:background="@drawable/more_line" />
+
+                <SkinTextView
+                    android:id="@+id/tv_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:paddingLeft="12dip"
+                    android:text="@string/historylinkman"
+                    android:visibility="gone" />
+
+                <SkinTextView
+                    android:id="@+id/linkmanImageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/historylinkman"
+                    android:textColor="@color/defcolor" />
+
+                <SkinLinearLayout
+                    android:id="@+id/bottomGrid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+                </SkinLinearLayout>
+            </SkinLinearLayout>
+        </ScrollView>
+
+        <view
+            android:id="@+id/history"
+            style="?android:attr/listViewWhiteStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="1dip"
+            android:layout_weight="1.0"
+            class="com.haolianluo.sms2.ui.MessageListView"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:drawSelectorOnTop="true"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/chat_history_selector"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="insideInset"
+            android:scrollbarThumbVertical="@drawable/scroll"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            android:visibility="gone" />
+
+        <SkinFrameLayout
+            android:id="@+id/fl_flash"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <com.haolianluo.swfp.GLSurfaceView
+                android:id="@+id/play"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal" />
+            
+            <com.haolianluo.swfp.PageWidget
+	            android:id="@+id/page"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" 
+	            android:layout_gravity="center_vertical|center_horizontal" 
+	            android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/playDraftAndMms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:visibility="gone" >
+
+                <!--
+                android:layout_width="280dip"
+                android:layout_height="373dip"                -->
+
+                <ImageView
+                    android:id="@+id/playDraftAndMmsImageView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/play_bg" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/playDraftAndMmsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/play_button" />
+
+                    <TextView
+                        android:id="@+id/playDraftAndMmsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/seeMms" />
+
+                    <TextView
+                        android:id="@+id/playDraftAndMmsSubject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="3" >
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+        </SkinFrameLayout>
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <view
+                android:id="@+id/attachment_editor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                class="com.haolianluo.sms2.ui.AttachmentEditor"
+                android:orientation="vertical" >
+
+                <ViewStub
+                    android:id="@+id/image_attachment_view_portrait_stub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/image_attachment_view_portrait" />
+
+                <ViewStub
+                    android:id="@+id/video_attachment_view_portrait_stub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/video_attachment_view_portrait" />
+
+                <ViewStub
+                    android:id="@+id/audio_attachment_view_portrait_stub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/audio_attachment_view_portrait" />
+
+                <ViewStub
+                    android:id="@+id/slideshow_attachment_view_portrait_stub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/slideshow_attachment_view_portrait" />
+
+                <ViewStub
+                    android:id="@+id/image_attachment_view_landscape_stub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/image_attachment_view_landscape" />
+
+                <ViewStub
+                    android:id="@+id/video_attachment_view_landscape_stub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/video_attachment_view_landscape" />
+
+                <ViewStub
+                    android:id="@+id/audio_attachment_view_landscape_stub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/audio_attachment_view_landscape" />
+
+                <ViewStub
+                    android:id="@+id/slideshow_attachment_view_landscape_stub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/slideshow_attachment_view_landscape" />
+            </view>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <SkinLinearLayout
+            android:id="@+id/bottom_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/base"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip" >
+
+            <EditText
+                android:id="@+id/embedded_text_editor"
+                style="@style/et_input_box_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toLeftOf="@id/bt_send"
+                android:layout_weight="1"
+                android:hint="@string/input_body"
+                android:maxLength="970"
+                android:minHeight="35dip"
+                android:paddingLeft="5dip"
+                android:textColor="@color/talk_inputbody_color" />
+
+            <LinearLayout
+                android:id="@+id/button_with_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <SkinButton
+                    android:id="@+id/send_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="0dip"
+                    android:background="@drawable/bt_xml"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="1dip"
+                    android:text="@string/send"
+                    android:textColor="@color/talk_send_color" />
+
+                <SkinTextView
+                    android:id="@+id/text_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:gravity="center_horizontal|bottom"
+                    android:maxLines="1"
+                    android:paddingLeft="3dip"
+                    android:paddingRight="3dip"
+                    android:paddingTop="0dip"
+                    android:textColor="@color/talk_edit_count"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </SkinLinearLayout>
+    </LinearLayout>
+
+</SkinLinearLayout>

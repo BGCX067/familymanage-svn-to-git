@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent" 
+	android:layout_height="60dip"  android:background="@drawable/threadlayout_list"
+	>
+	
+	<CheckBox android:layout_width="wrap_content" android:layout_centerVertical="true" style="@style/MyCheckBox"
+		android:layout_height="wrap_content" android:id="@+id/cb_mark"  android:layout_marginRight="5dip"
+		android:layout_alignParentRight="true" android:visibility="gone" />
+	<SkinImageView android:layout_width="45dip"
+		android:layout_height="45dip" android:id="@+id/iv_thread_head" 
+		 android:layout_centerVertical="true"
+		android:layout_alignParentLeft="true"  android:layout_marginLeft="10dip"/>
+	<SkinImageView android:layout_width="15dip" android:layout_height="15dip"
+		android:layout_marginLeft="3dip" android:id="@+id/iv_thread_newsms" 
+		android:background="@drawable/newsms_icon"
+		android:layout_toRightOf="@id/iv_thread_head"
+		android:layout_centerVertical="true" />
+
+
+	<SkinTextView android:layout_width="wrap_content"
+		 android:layout_height="wrap_content" android:layout_marginTop="10dip"
+		android:id="@+id/tv_thread_time" android:textSize="14sp"
+		android:textColor="@color/t_time" android:layout_toLeftOf="@id/cb_mark"
+		android:layout_alignWithParentIfMissing="true"
+		android:layout_marginRight="10dip" />
+	<SkinTextView android:layout_width="wrap_content" android:layout_marginRight="5dip" android:textSize="15sp" 
+		android:layout_marginLeft="20dip" android:layout_height="wrap_content" android:singleLine="true" android:textColor="@color/t_name"
+		android:id="@+id/tv_thread_name" android:layout_alignWithParentIfMissing="true"
+		 android:layout_toLeftOf="@id/tv_thread_time" android:layout_marginTop="10dip"
+		android:layout_toRightOf="@id/iv_thread_head"
+		 android:ellipsize="middle" />
+	<SkinTextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true"
+		android:id="@+id/tv_thread_body" android:layout_marginLeft="20dip"
+		android:layout_toLeftOf="@id/cb_mark" 
+		android:layout_toRightOf="@id/iv_thread_head" android:layout_below="@id/tv_thread_name"
+		android:textSize="12sp" android:singleLine="true" android:textColor="@color/t_body"
+		android:ellipsize="end" />
+</SkinRelativeLayout>

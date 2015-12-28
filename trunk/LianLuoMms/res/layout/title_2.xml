@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkinRelativeLayout android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="46dip" android:id="@+id/rl_title"
+		android:background="@drawable/top">
+		<SkinButton android:layout_width="32dip"
+			android:layout_height="32dip" android:id="@+id/bt_shortcut_key" android:textColor="@color/defcolor"
+			android:layout_alignParentRight="true" android:layout_marginRight="5dip"
+			android:layout_centerVertical="true" android:background="@drawable/bt_shortcut_key_xml" />
+		<SkinButton android:layout_width="32dip"
+			android:layout_height="32dip" android:id="@+id/bt_call" android:textColor="@color/defcolor"
+			android:layout_marginRight="5dip" android:layout_toLeftOf="@id/bt_shortcut_key"
+			android:layout_centerVertical="true" android:background="@drawable/bt_call_xml" />
+		<SkinImageView android:layout_width="32dip"
+			android:layout_height="32dip" android:id="@+id/iv_head"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="5dip" android:layout_centerVertical="true" />
+		<SkinTextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/StyleText" android:visibility="gone"
+		    android:id="@+id/tv_name" android:layout_centerVertical="true" android:layout_toRightOf="@id/iv_head" android:layout_marginRight="5dip"
+		    android:textColor="@color/title" android:layout_marginLeft="5dip" android:ellipsize="marquee" android:singleLine="true" android:layout_toLeftOf="@id/bt_call"/>
+		<SkinTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/title"
+		    android:id="@+id/tv_percent" android:layout_centerInParent="true" 
+		    android:singleLine="true" />
+</SkinRelativeLayout>

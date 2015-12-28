@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Phone attribution</string>
+    <string name="number">number:</string>
+    <string name="province">province:</string>
+    <string name="city">city:</string>
+    <string name="area_code">area code:</string>
+    <string name="zip_code">zip code:</string>
+    <string name="card">card type:</string>
+    <string name="search">search</string>
+    <string name="input_number">Please input phone number!</string>
+    <string name="wrong_number">Wrong number!</string>
+    <string name="fail">Search failed, Please check the Internet!</string>
+</resources>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haolianluo.sms2"
+    android:versionCode="6"
+    android:versionName="2.2" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:name=".data.HSmsApplication"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.haolianluo.sms2.HStartLianluosms" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.haolianluo.sms2.HLeadActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.haolianluo.sms2.HThreadActivity" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HTalkActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter >
+                <action
+					android:name="android.intent.action.VIEW" >
+				</action>
+				<category
+					android:name="android.intent.category.DEFAULT" >
+				</category>
+				<data
+					android:mimeType="vnd.android-dir/mms-sms">
+				</data>
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HGuideActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HPreviewActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HPlayMMSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HResLibActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HResLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HResAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HResChangepwActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HResForgetpwActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HResRegistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HResVerifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HResDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="HResForgetwActivity"
+            android:screenOrientation="portrait" />
+        <activity 
+            android:name="HEditSmsActivity"
+            android:launchMode="singleTop"
+	        android:screenOrientation="portrait" 
+	        android:configChanges="orientation|keyboardHidden" />
+	    <activity 
+	        android:name="HContactActivity"
+		    android:screenOrientation="portrait" 
+		    android:configChanges="orientation|keyboardHidden" 
+		    android:windowSoftInputMode="stateAlwaysHidden"/>
+	    <activity 
+	        android:name="HSettingActivity"
+		    android:screenOrientation="portrait" 
+		    android:configChanges="orientation|keyboardHidden" />
+	     <activity 
+	        android:name="HProblemActivity"
+		    android:screenOrientation="portrait" 
+		    android:configChanges="orientation|keyboardHidden" />
+	     <activity 
+	        android:excludeFromRecents="true"
+	        android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+	        android:name="HDeskFlashActivity"
+		    android:screenOrientation="portrait" 
+		    android:configChanges="orientation|keyboardHidden" />
+	     <activity 
+	        android:excludeFromRecents="true"
+	        android:theme="@style/Theme.Transparent"
+	        android:name="HDialog"
+		    android:screenOrientation="portrait" 
+		    android:configChanges="orientation|keyboardHidden" />
+	     <activity 
+	        android:name="HSeeCollectSmsActivity"
+		    android:screenOrientation="portrait" 
+		    android:configChanges="orientation|keyboardHidden" />
+	     
+	    <activity 
+	        android:name="HResDetailActivity"
+		    android:screenOrientation="portrait" 
+		    android:configChanges="orientation|keyboardHidden" />
+	    <activity 
+	        android:name="HUpdateDialog"
+	        android:screenOrientation="portrait" 
+		    android:configChanges="orientation|keyboardHidden" 
+            android:theme="@android:style/Theme.Dialog"
+            android:launchMode="singleTask"
+            />
+	    <activity 
+	        android:name="HActivityGroup"
+		    android:screenOrientation="portrait" 
+		    android:configChanges="orientation|keyboardHidden" 
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+		    />
+        
+        <service android:name="HService" >
+            <intent-filter>  
+        		<action android:name="com.haolianluo.sms2.HService"/>  
+            </intent-filter>  
+        </service>    
+
+        <receiver android:name=".model.HSMSReceiver">
+			<intent-filter android:priority="2147483647">
+				<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+				<category android:name="android.intent.category.DEFAULT" /> 
+			</intent-filter>
+		</receiver>
+		<receiver android:name=".model.HMMSReceiver">
+			<intent-filter android:priority="2147483647">
+				 <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+                 <data android:mimeType="application/vnd.wap.mms-message" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name=".model.HMmsDownloadFinish" >
+            <intent-filter android:priority="2147483647">
+              	<action android:name="android.intent.action.CONTENT_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".model.HStartServiceReceiver" >
+			<intent-filter>  
+        		<action android:name="android.intent.action.BOOT_COMPLETED"/>  
+            </intent-filter>  
+		</receiver>
+		<receiver android:name=".HSkinRemoveReceiver" android:enabled="true"> 
+        	<intent-filter>
+        		<action android:name="android.intent.action.PACKAGE_REMOVED"/>
+        		<action android:name="android.intent.action.PACKAGE_REPLACED"/>
+        		<action android:name="android.intent.action.PACKAGE_CHANGED"/>
+        		<data android:scheme="package"></data>  
+    		</intent-filter>
+        </receiver>
+		<service android:name=".model.SmsSendService" />
+		<provider android:name=".model.HResProvider" 
+        android:authorities="com.haolianluo.sms.resinfo" 
+        android:exported="true">
+        </provider>
+    </application>
+
+    <!-- 权限的添加 -->
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 访问internet权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 判断联网状态的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <!-- 注册使用拨打电话功能的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+</manifest>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout 
+    android:orientation="vertical"
+    android:id="@+id/linearlayout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.0"
+    >
+    <RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:background="@drawable/title_bkg"
+    android:layout_height="50dp">
+	    <ImageView
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentLeft="true"
+	    android:src="@drawable/add_folder"
+	    android:id="@+id/textview_add_folder"
+	    >
+	    </ImageView>
+	    <TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:paddingLeft="60dp"
+	    android:paddingRight="60dp"
+	    android:textColor="#000000"
+	    android:singleLine="true"
+	    android:ellipsize="middle"
+	    android:id="@+id/textview_title">
+	    </TextView>
+	    <ImageView
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentRight="true"
+	    android:src="@drawable/add_note"
+	    android:id="@+id/textview_add_note"
+	    >
+	    </ImageView>
+    </RelativeLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    >
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    >
+    <ListView
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/folder_back"
+    android:cacheColorHint="#00000000"
+    android:listSelector="#00000000"
+    android:divider="#00000000"
+    android:fadingEdge="none"
+    android:fadingEdgeLength="0dp"
+    android:scrollbars="none"
+    android:id="@+id/listview_folsers">
+    </ListView>
+    </LinearLayout>
+    <ListView
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:cacheColorHint="#00000000"
+    android:listSelector="#00000000"
+    android:fadingEdge="none"
+    android:fadingEdgeLength="0dp"
+    android:scrollbars="none"
+    android:layout_weight="1"
+    android:layout_margin="15dp"
+    android:dividerHeight="10dp"
+    android:divider="#00000000"
+    android:id="@+id/listview_notes">
+    </ListView>
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="50dp"
+android:orientation="horizontal"
+android:gravity="center"
+android:visibility="gone"
+android:background="@drawable/menu_bg"
+android:id="@+id/linearlayout_delete_folder"
+android:layout_gravity="bottom">
+	<TextView
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:shadowRadius="2"
+	android:shadowDx="2"
+    android:shadowDy="2"
+    android:shadowColor="#572307"
+	android:textColor="@drawable/text_back"
+	android:textSize="20dp"
+	android:textStyle="bold"
+	android:gravity="center"
+	android:id="@+id/textview_delete_folder"
+	android:text="@string/delete">
+	</TextView>
+	<TextView
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:shadowRadius="2"
+	android:shadowDx="2"
+    android:shadowDy="2"
+    android:shadowColor="#572307"
+	android:textColor="@drawable/text_back"
+	android:textSize="20dp"
+	android:textStyle="bold"
+	android:gravity="center"
+	android:id="@+id/textview_cancel_folder"
+	android:text="@string/cancel">
+	</TextView>
+</LinearLayout>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="50dp"
+android:orientation="horizontal"
+android:gravity="center"
+android:visibility="gone"
+android:background="@drawable/menu_bg"
+android:id="@+id/linearlayout_delete_note"
+>
+	<TextView
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:shadowRadius="2"
+	android:shadowDx="2"
+    android:shadowDy="2"
+    android:shadowColor="#572307"
+	android:textColor="@drawable/text_back"
+	android:textSize="20dp"
+	android:textStyle="bold"
+	android:gravity="center"
+	android:id="@+id/textview_delete_note"
+	android:text="@string/delete">
+	</TextView>
+	<TextView
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:shadowRadius="2"
+	android:shadowDx="2"
+    android:shadowDy="2"
+    android:shadowColor="#572307"
+	android:textColor="@drawable/text_back"
+	android:textSize="20dp"
+	android:textStyle="bold"
+	android:gravity="center"
+	android:id="@+id/textview_move_note"
+	android:text="@string/move">
+	</TextView>
+	<TextView
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:shadowRadius="2"
+	android:shadowDx="2"
+    android:shadowDy="2"
+    android:shadowColor="#572307"
+	android:textColor="@drawable/text_back"
+	android:textSize="20dp"
+	android:textStyle="bold"
+	android:gravity="center"
+	android:id="@+id/textview_cancel_note"
+	android:text="@string/cancel">
+	</TextView>
+</LinearLayout>
+</LinearLayout>

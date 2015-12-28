@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2008 Esmertec AG.
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<com.haolianluo.sms2.ui.sms2.HTalkListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msg_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="20dip" 
+    android:background="@color/nothing">
+
+    <SkinLinearLayout
+        android:id="@+id/msg_list_item_gravity"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/mms_layout_view_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="5dip" >
+
+            <ViewStub
+                android:id="@+id/mms_layout_view_stub"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/mms_layout_view" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <SkinTextView
+                    android:id="@+id/text_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:linksClickable="false"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="6dip"
+                    android:textColor="@color/talk_body_color"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_below="@id/avatar" />
+
+                <LinearLayout
+                    android:id="@+id/status_icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/text_view"
+                    android:layout_marginBottom="8dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/locked_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="3dip"
+                        android:src="@drawable/ic_lock_message_sms"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/delivered_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="3dip"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/details_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sms_mms_details"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ViewStub
+            android:id="@+id/mms_downloading_view_stub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout="@layout/mms_downloading_view" />
+    </SkinLinearLayout>
+
+</com.haolianluo.sms2.ui.sms2.HTalkListItem>

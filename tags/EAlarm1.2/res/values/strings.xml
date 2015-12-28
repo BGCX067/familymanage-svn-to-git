@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pirate Alarm Clock</string>
+    <string name="app_alarm">Pirate Alarm Clock</string>
+    <string name="alarm">Alarm</string>
+    <string name="my_alarm">My alarm</string>
+    <string name="add_alarm">Add alarm</string>
+    <string name="set_alarm">Alarm setting</string>
+    <string name="setting">Setting</string>
+    <string name="no_alarm">There is no alarm</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="delay_time">Snooze duration</string>
+    <string name="alert_info">Label</string>
+    <string name="alert_ring">Ringtone</string>
+    <string name="is_ring">Ring</string>
+    <string name="is_vibrate">Vibrate</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_repeat">Never</string>
+    <string name="delete">Delete</string>
+    <string name="delay">Snooze</string>
+    <string name="stop">Stop</string>
+    <string name="store">Store</string>
+    <string name="delete_message">Delete alarm?</string>
+    <string name="push">Snooze %1$s minutes</string>
+    <string name="select_ringtone">Select ringtone</string>
+    <string name="alarm_set">Alarm set</string>
+    <string name="alarm_ringing">Alarm ringing</string>
+    <string name="insert_sd_card">Insert SD card and add MP3 files</string>
+    <string name="share">Share</string>
+    <string name="about">About</string>
+    <string name="notify_icon">Show notify icon</string>
+    <string name="share_way">Share way</string>
+    <string name="share_content">I am using an Android software named Pirate Alarm, it is punctual and convenient, Go download it!</string>
+    <string name="update_log">Thank you very much for using Pirate Alarm Clock! In this version, snooze problem in some phone is fixed, alarm repeating is modified, you can choose whether to show the notification icon</string>
+    <string name="author">Author: Exuan</string>
+    <string name="version">Version: </string>
+    
+    <string-array name="repeat_array">
+        <item>Never</item>
+        <item>Everyday</item>
+        <item>Workday</item>
+        <item>Weekend</item>
+        <item>Custom</item>
+    </string-array>
+    
+    <string-array name="week_array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    
+    <string-array name="week_short_array">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+    
+    <string-array name="ringtone_array">
+        <item>luffy</item>
+        <item>nami</item>
+        <item>shanji</item>
+        <item>zorro</item>
+        <item>usopp</item>
+        <item>chopper</item>
+        <item>robin</item>
+        <item>franky</item>
+        <item>bruck</item>
+    </string-array>
+    
+    <string-array name="ringtone_type">
+        <item>Pirate ringtone</item>
+        <item>System ringtone</item>
+        <item>MP3 ringtone</item>
+    </string-array>
+    
+    <string name="in_one_minute">This alarm is set for less than 1 minute from now.</string>
+	<string-array name="alarm_toast">
+        <item>This alarm is set for %1$s from now.</item>
+        <item>This alarm is set for %1$s and %2$s from now.</item>
+        <item>This alarm is set for %1$s and %2$s and %3$s from now.</item>
+    </string-array>
+    <string name="day">day</string>
+    <string name="days">days</string>
+    <string name="hour">hour</string>
+    <string name="hours">hours</string>
+    <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
+    
+</resources>
